@@ -37,31 +37,19 @@ Codes to run the analysis are stored in the "Analysis" folders.
 
 The first time you run, mkdir these directories: files_nominal, files_up, files_down.
 
-The first time you run, you should also copy locally the HTT scale factors and pileup reweighting files:
+The first time you run, you should also copy locally the HTT scale factors:
 
 '''
-cp /afs/cern.ch/work/a/adewit/public/pileup-hists-2016/MC_Spring16_PU25ns_V1.root .
-cp /afs/cern.ch/user/a/anehrkor/public/Data_Pileup_2016_July22.root MyDataPileupHistogram.root
 git clone https://github.com/CMS-HTT/LeptonEfficiencies
 '''
 
-To run the 1D analysis: 
-'''
-sh do_all.sh
-'''
-
-Plot the 1D analysis:
-'''
-python Draw.py
-'''
-
-To run the 2D analysis: 
+To run the analysis: 
 '''
 sh do_all2D_relaxed.sh
 '''
 
-Plot and unroll 2D analysis: 
+Unroll 2D analysis: 
 '''
-python Unroll_2Drelaxed.py
+python Create_1D.root
 '''
 
