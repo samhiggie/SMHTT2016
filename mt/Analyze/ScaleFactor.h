@@ -187,7 +187,7 @@ class ScaleFactor {
                
                        if ( efficiency_mc != 0) {SF = efficiency_data/efficiency_mc;}
                        else {
-                       SF=0.; std::cout << "WARNING in ScaleFactor::get_ScaleFactor(double pt, double eta) from LepEffInterface/src/ScaleFactor.cc : MC efficiency = 0. Scale Factor set to 0. ";
+                       SF=0.; //std::cout << "WARNING in ScaleFactor::get_ScaleFactor(double pt, double eta) from LepEffInterface/src/ScaleFactor.cc : MC efficiency = 0. Scale Factor set to 0. ";
                        }
                
                        return SF;
