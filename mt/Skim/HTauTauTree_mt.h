@@ -14,8 +14,18 @@ public :
 
    // Declaration of leaf types
 
-    Float_t         EmbPtWeight;
+   Float_t         EmbPtWeight;
    Float_t         Eta;
+   Float_t         Flag_BadChargedCandidateFilter;
+   Float_t         Flag_BadPFMuonFilter;
+   Float_t         Flag_EcalDeadCellTriggerPrimitiveFilter;
+   Float_t         Flag_HBHENoiseFilter;
+   Float_t         Flag_HBHENoiseIsoFilter;
+   Float_t         Flag_badCloneMuonFilter;
+   Float_t         Flag_badGlobalMuonFilter;
+   Float_t         Flag_eeBadScFilter;
+   Float_t         Flag_globalTightHalo2016Filter;
+   Float_t         Flag_goodVertices;
    Float_t         GenWeight;
    Float_t         Ht;
    Float_t         LT;
@@ -62,14 +72,25 @@ public :
    Float_t         doubleTau40Group;
    Float_t         doubleTau40Pass;
    Float_t         doubleTau40Prescale;
+   Float_t         doubleTauCmbIso35RegGroup;
+   Float_t         doubleTauCmbIso35RegPass;
+   Float_t         doubleTauCmbIso35RegPrescale;
+   Float_t         doubleTauCmbIso40Group;
+   Float_t         doubleTauCmbIso40Pass;
+   Float_t         doubleTauCmbIso40Prescale;
+   Float_t         doubleTauCmbIso40RegGroup;
+   Float_t         doubleTauCmbIso40RegPass;
+   Float_t         doubleTauCmbIso40RegPrescale;
    Float_t         eVetoMVAIso;
    Float_t         eVetoMVAIsoVtx;
    Float_t         eVetoZTTp001dxyz;
    Float_t         eVetoZTTp001dxyzR0;
    ULong64_t       evt;
+   Float_t         genEta;
    Float_t         genHTT;
    Float_t         genM;
    Float_t         genMass;
+   Float_t         genPhi;
    Float_t         genpT;
    Float_t         genpX;
    Float_t         genpY;
@@ -102,142 +123,121 @@ public :
    Float_t         j2pu;
    Float_t         j2rawf;
    Float_t         jb1csv;
+   Float_t         jb1csv_CSVL;
    Float_t         jb1eta;
+   Float_t         jb1eta_CSVL;
    Float_t         jb1hadronflavor;
+   Float_t         jb1hadronflavor_CSVL;
    Float_t         jb1partonflavor;
+   Float_t         jb1partonflavor_CSVL;
    Float_t         jb1phi;
+   Float_t         jb1phi_CSVL;
    Float_t         jb1pt;
    Float_t         jb1ptDown;
+   Float_t         jb1ptDown_CSVL;
    Float_t         jb1ptUp;
+   Float_t         jb1ptUp_CSVL;
+   Float_t         jb1pt_CSVL;
    Float_t         jb1pu;
+   Float_t         jb1pu_CSVL;
    Float_t         jb1rawf;
+   Float_t         jb1rawf_CSVL;
    Float_t         jb2csv;
+   Float_t         jb2csv_CSVL;
    Float_t         jb2eta;
+   Float_t         jb2eta_CSVL;
    Float_t         jb2hadronflavor;
+   Float_t         jb2hadronflavor_CSVL;
    Float_t         jb2partonflavor;
+   Float_t         jb2partonflavor_CSVL;
    Float_t         jb2phi;
+   Float_t         jb2phi_CSVL;
    Float_t         jb2pt;
    Float_t         jb2ptDown;
+   Float_t         jb2ptDown_CSVL;
    Float_t         jb2ptUp;
+   Float_t         jb2ptUp_CSVL;
+   Float_t         jb2pt_CSVL;
    Float_t         jb2pu;
+   Float_t         jb2pu_CSVL;
    Float_t         jb2rawf;
+   Float_t         jb2rawf_CSVL;
    Float_t         jetVeto20;
    Float_t         jetVeto20_JetEnDown;
    Float_t         jetVeto20_JetEnUp;
    Float_t         jetVeto30;
+   Float_t         jetVeto30_JetAbsoluteFlavMapDown;
+   Float_t         jetVeto30_JetAbsoluteFlavMapUp;
+   Float_t         jetVeto30_JetAbsoluteMPFBiasDown;
+   Float_t         jetVeto30_JetAbsoluteMPFBiasUp;
+   Float_t         jetVeto30_JetAbsoluteScaleDown;
+   Float_t         jetVeto30_JetAbsoluteScaleUp;
+   Float_t         jetVeto30_JetAbsoluteStatDown;
+   Float_t         jetVeto30_JetAbsoluteStatUp;
+   Float_t         jetVeto30_JetClosureDown;
+   Float_t         jetVeto30_JetClosureUp;
    Float_t         jetVeto30_JetEnDown;
    Float_t         jetVeto30_JetEnUp;
-   /*Float_t         lheweight0;
-   Float_t         lheweight1;
-   Float_t         lheweight10;
-   Float_t         lheweight100;
-   Float_t         lheweight101;
-   Float_t         lheweight102;
-   Float_t         lheweight103;
-   Float_t         lheweight104;
-   Float_t         lheweight105;
-   Float_t         lheweight106;
-   Float_t         lheweight107;
-   Float_t         lheweight108;
-   Float_t         lheweight109;
-   Float_t         lheweight11;
-   Float_t         lheweight110;
-   Float_t         lheweight12;
-   Float_t         lheweight13;
-   Float_t         lheweight14;
-   Float_t         lheweight15;
-   Float_t         lheweight16;
-   Float_t         lheweight17;
-   Float_t         lheweight18;
-   Float_t         lheweight19;
-   Float_t         lheweight2;
-   Float_t         lheweight20;
-   Float_t         lheweight21;
-   Float_t         lheweight22;
-   Float_t         lheweight23;
-   Float_t         lheweight24;
-   Float_t         lheweight25;
-   Float_t         lheweight26;
-   Float_t         lheweight27;
-   Float_t         lheweight28;
-   Float_t         lheweight29;
-   Float_t         lheweight3;
-   Float_t         lheweight30;
-   Float_t         lheweight31;
-   Float_t         lheweight32;
-   Float_t         lheweight33;
-   Float_t         lheweight34;
-   Float_t         lheweight35;
-   Float_t         lheweight36;
-   Float_t         lheweight37;
-   Float_t         lheweight38;
-   Float_t         lheweight39;
-   Float_t         lheweight4;
-   Float_t         lheweight40;
-   Float_t         lheweight41;
-   Float_t         lheweight42;
-   Float_t         lheweight43;
-   Float_t         lheweight44;
-   Float_t         lheweight45;
-   Float_t         lheweight46;
-   Float_t         lheweight47;
-   Float_t         lheweight48;
-   Float_t         lheweight49;
-   Float_t         lheweight5;
-   Float_t         lheweight50;
-   Float_t         lheweight51;
-   Float_t         lheweight52;
-   Float_t         lheweight53;
-   Float_t         lheweight54;
-   Float_t         lheweight55;
-   Float_t         lheweight56;
-   Float_t         lheweight57;
-   Float_t         lheweight58;
-   Float_t         lheweight59;
-   Float_t         lheweight6;
-   Float_t         lheweight60;
-   Float_t         lheweight61;
-   Float_t         lheweight62;
-   Float_t         lheweight63;
-   Float_t         lheweight64;
-   Float_t         lheweight65;
-   Float_t         lheweight66;
-   Float_t         lheweight67;
-   Float_t         lheweight68;
-   Float_t         lheweight69;
-   Float_t         lheweight7;
-   Float_t         lheweight70;
-   Float_t         lheweight71;
-   Float_t         lheweight72;
-   Float_t         lheweight73;
-   Float_t         lheweight74;
-   Float_t         lheweight75;
-   Float_t         lheweight76;
-   Float_t         lheweight77;
-   Float_t         lheweight78;
-   Float_t         lheweight79;
-   Float_t         lheweight8;
-   Float_t         lheweight80;
-   Float_t         lheweight81;
-   Float_t         lheweight82;
-   Float_t         lheweight83;
-   Float_t         lheweight84;
-   Float_t         lheweight85;
-   Float_t         lheweight86;
-   Float_t         lheweight87;
-   Float_t         lheweight88;
-   Float_t         lheweight89;
-   Float_t         lheweight9;
-   Float_t         lheweight90;
-   Float_t         lheweight91;
-   Float_t         lheweight92;
-   Float_t         lheweight93;
-   Float_t         lheweight94;
-   Float_t         lheweight95;
-   Float_t         lheweight96;
-   Float_t         lheweight97;
-   Float_t         lheweight98;
-   Float_t         lheweight99;*/
+   Float_t         jetVeto30_JetFlavorQCDDown;
+   Float_t         jetVeto30_JetFlavorQCDUp;
+   Float_t         jetVeto30_JetFragmentationDown;
+   Float_t         jetVeto30_JetFragmentationUp;
+   Float_t         jetVeto30_JetPileUpDataMCDown;
+   Float_t         jetVeto30_JetPileUpDataMCUp;
+   Float_t         jetVeto30_JetPileUpPtBBDown;
+   Float_t         jetVeto30_JetPileUpPtBBUp;
+   Float_t         jetVeto30_JetPileUpPtEC1Down;
+   Float_t         jetVeto30_JetPileUpPtEC1Up;
+   Float_t         jetVeto30_JetPileUpPtEC2Down;
+   Float_t         jetVeto30_JetPileUpPtEC2Up;
+   Float_t         jetVeto30_JetPileUpPtHFDown;
+   Float_t         jetVeto30_JetPileUpPtHFUp;
+   Float_t         jetVeto30_JetPileUpPtRefDown;
+   Float_t         jetVeto30_JetPileUpPtRefUp;
+   Float_t         jetVeto30_JetRelativeBalDown;
+   Float_t         jetVeto30_JetRelativeBalUp;
+   Float_t         jetVeto30_JetRelativeFSRDown;
+   Float_t         jetVeto30_JetRelativeFSRUp;
+   Float_t         jetVeto30_JetRelativeJEREC1Down;
+   Float_t         jetVeto30_JetRelativeJEREC1Up;
+   Float_t         jetVeto30_JetRelativeJEREC2Down;
+   Float_t         jetVeto30_JetRelativeJEREC2Up;
+   Float_t         jetVeto30_JetRelativeJERHFDown;
+   Float_t         jetVeto30_JetRelativeJERHFUp;
+   Float_t         jetVeto30_JetRelativePtBBDown;
+   Float_t         jetVeto30_JetRelativePtBBUp;
+   Float_t         jetVeto30_JetRelativePtEC1Down;
+   Float_t         jetVeto30_JetRelativePtEC1Up;
+   Float_t         jetVeto30_JetRelativePtEC2Down;
+   Float_t         jetVeto30_JetRelativePtEC2Up;
+   Float_t         jetVeto30_JetRelativePtHFDown;
+   Float_t         jetVeto30_JetRelativePtHFUp;
+   Float_t         jetVeto30_JetRelativeStatECDown;
+   Float_t         jetVeto30_JetRelativeStatECUp;
+   Float_t         jetVeto30_JetRelativeStatFSRDown;
+   Float_t         jetVeto30_JetRelativeStatFSRUp;
+   Float_t         jetVeto30_JetRelativeStatHFDown;
+   Float_t         jetVeto30_JetRelativeStatHFUp;
+   Float_t         jetVeto30_JetSinglePionECALDown;
+   Float_t         jetVeto30_JetSinglePionECALUp;
+   Float_t         jetVeto30_JetSinglePionHCALDown;
+   Float_t         jetVeto30_JetSinglePionHCALUp;
+   Float_t         jetVeto30_JetSubTotalAbsoluteDown;
+   Float_t         jetVeto30_JetSubTotalAbsoluteUp;
+   Float_t         jetVeto30_JetSubTotalMCDown;
+   Float_t         jetVeto30_JetSubTotalMCUp;
+   Float_t         jetVeto30_JetSubTotalPileUpDown;
+   Float_t         jetVeto30_JetSubTotalPileUpUp;
+   Float_t         jetVeto30_JetSubTotalPtDown;
+   Float_t         jetVeto30_JetSubTotalPtUp;
+   Float_t         jetVeto30_JetSubTotalRelativeDown;
+   Float_t         jetVeto30_JetSubTotalRelativeUp;
+   Float_t         jetVeto30_JetSubTotalScaleDown;
+   Float_t         jetVeto30_JetSubTotalScaleUp;
+   Float_t         jetVeto30_JetTimePtEtaDown;
+   Float_t         jetVeto30_JetTimePtEtaUp;
+   Float_t         jetVeto30_JetTotalDown;
+   Float_t         jetVeto30_JetTotalUp;
    Int_t           lumi;
    Float_t         mAbsEta;
    Float_t         mBestTrackType;
@@ -262,6 +262,14 @@ public :
    Float_t         mEcalIsoDR03;
    Float_t         mEffectiveArea2011;
    Float_t         mEffectiveArea2012;
+   Float_t         mErsatzGenEta;
+   Float_t         mErsatzGenM;
+   Float_t         mErsatzGenPhi;
+   Float_t         mErsatzGenpT;
+   Float_t         mErsatzGenpX;
+   Float_t         mErsatzGenpY;
+   Float_t         mErsatzVispX;
+   Float_t         mErsatzVispY;
    Float_t         mEta;
    Float_t         mEta_MuonEnDown;
    Float_t         mEta_MuonEnUp;
@@ -289,10 +297,14 @@ public :
    Float_t         mIsTracker;
    Float_t         mIsoDB03;
    Float_t         mIsoDB04;
-   Float_t         mIsoMu17Filter;
-   Float_t         mIsoMu18Filter;
    Float_t         mIsoMu22Filter;
+   Float_t         mIsoMu22eta2p1Filter;
+   Float_t         mIsoMu24Filter;
+   Float_t         mIsoMu24eta2p1Filter;
    Float_t         mIsoTkMu22Filter;
+   Float_t         mIsoTkMu22eta2p1Filter;
+   Float_t         mIsoTkMu24Filter;
+   Float_t         mIsoTkMu24eta2p1Filter;
    Float_t         mJetArea;
    Float_t         mJetBtag;
    Float_t         mJetEtaEtaMoment;
@@ -309,11 +321,23 @@ public :
    Float_t         mMatchesDoubleESingleMu;
    Float_t         mMatchesDoubleMu;
    Float_t         mMatchesDoubleMuSingleE;
-   Float_t         mMatchesIsoMu17Path;
-   Float_t         mMatchesIsoMu18Path;
-   Float_t         mMatchesMu17Ele12Path;
+   Float_t         mMatchesIsoMu22Path;
+   Float_t         mMatchesIsoMu22eta2p1Path;
+   Float_t         mMatchesIsoMu24Path;
+   Float_t         mMatchesIsoMu24eta2p1Path;
+   Float_t         mMatchesIsoTkMu22Path;
+   Float_t         mMatchesIsoTkMu22eta2p1Path;
+   Float_t         mMatchesIsoTkMu24Path;
+   Float_t         mMatchesIsoTkMu24eta2p1Path;
+   Float_t         mMatchesMu19Tau20Filter;
+   Float_t         mMatchesMu19Tau20Path;
+   Float_t         mMatchesMu19Tau20sL1Filter;
+   Float_t         mMatchesMu19Tau20sL1Path;
+   Float_t         mMatchesMu21Tau20sL1Filter;
+   Float_t         mMatchesMu21Tau20sL1Path;
+   Float_t         mMatchesMu23Ele12DZPath;
    Float_t         mMatchesMu23Ele12Path;
-   Float_t         mMatchesMu8Ele17Path;
+   Float_t         mMatchesMu8Ele23DZPath;
    Float_t         mMatchesMu8Ele23Path;
    Float_t         mMatchesSingleESingleMu;
    Float_t         mMatchesSingleMu;
@@ -341,9 +365,9 @@ public :
    Float_t         mMtToPfMet_UnclusteredEnDown;
    Float_t         mMtToPfMet_UnclusteredEnUp;
    Float_t         mMtToPfMet_type1;
-   Float_t         mMu17Ele12Filter;
+   Float_t         mMu23Ele12DZFilter;
    Float_t         mMu23Ele12Filter;
-   Float_t         mMu8Ele17Filter;
+   Float_t         mMu8Ele23DZFilter;
    Float_t         mMu8Ele23Filter;
    Float_t         mMuonHits;
    Float_t         mNearestZMass;
@@ -409,8 +433,12 @@ public :
    Float_t         m_t_SS;
    Float_t         m_t_ToMETDPhi_Ty1;
    Float_t         m_t_collinearmass;
+   Float_t         m_t_collinearmass_EleEnDown;
+   Float_t         m_t_collinearmass_EleEnUp;
    Float_t         m_t_collinearmass_JetEnDown;
    Float_t         m_t_collinearmass_JetEnUp;
+   Float_t         m_t_collinearmass_MuEnDown;
+   Float_t         m_t_collinearmass_MuEnUp;
    Float_t         m_t_collinearmass_TauEnDown;
    Float_t         m_t_collinearmass_TauEnUp;
    Float_t         m_t_collinearmass_UnclusteredEnDown;
@@ -421,6 +449,10 @@ public :
    Float_t         metcov01;
    Float_t         metcov10;
    Float_t         metcov11;
+   Float_t         metcov00_DESYlike;
+   Float_t         metcov01_DESYlike;
+   Float_t         metcov10_DESYlike;
+   Float_t         metcov11_DESYlike;
    Float_t         muGlbIsoVetoPt10;
    Float_t         muVetoPt15IsoIdVtx;
    Float_t         muVetoPt5;
@@ -481,15 +513,21 @@ public :
    Float_t         singleE27SingleTau20SingleL1Group;
    Float_t         singleE27SingleTau20SingleL1Pass;
    Float_t         singleE27SingleTau20SingleL1Prescale;
+   Float_t         singleE27TightGroup;
+   Float_t         singleE27TightPass;
+   Float_t         singleE27TightPrescale;
+   Float_t         singleE27eta2p1LooseGroup;
+   Float_t         singleE27eta2p1LoosePass;
+   Float_t         singleE27eta2p1LoosePrescale;
+   Float_t         singleE27eta2p1TightGroup;
+   Float_t         singleE27eta2p1TightPass;
+   Float_t         singleE27eta2p1TightPrescale;
    Float_t         singleE32SingleTau20SingleL1Group;
    Float_t         singleE32SingleTau20SingleL1Pass;
    Float_t         singleE32SingleTau20SingleL1Prescale;
    Float_t         singleE36SingleTau30Group;
    Float_t         singleE36SingleTau30Pass;
    Float_t         singleE36SingleTau30Prescale;
-   Float_t         singleEGroup;
-   Float_t         singleEPass;
-   Float_t         singleEPrescale;
    Float_t         singleESingleMuGroup;
    Float_t         singleESingleMuPass;
    Float_t         singleESingleMuPrescale;
@@ -499,18 +537,21 @@ public :
    Float_t         singleE_leg2Group;
    Float_t         singleE_leg2Pass;
    Float_t         singleE_leg2Prescale;
-   Float_t         singleEeta2p1LooseGroup;
-   Float_t         singleEeta2p1LoosePass;
-   Float_t         singleEeta2p1LoosePrescale;
    Float_t         singleIsoMu20Group;
    Float_t         singleIsoMu20Pass;
    Float_t         singleIsoMu20Prescale;
    Float_t         singleIsoMu22Group;
    Float_t         singleIsoMu22Pass;
    Float_t         singleIsoMu22Prescale;
+   Float_t         singleIsoMu22eta2p1Group;
+   Float_t         singleIsoMu22eta2p1Pass;
+   Float_t         singleIsoMu22eta2p1Prescale;
    Float_t         singleIsoMu24Group;
    Float_t         singleIsoMu24Pass;
    Float_t         singleIsoMu24Prescale;
+   Float_t         singleIsoMu24eta2p1Group;
+   Float_t         singleIsoMu24eta2p1Pass;
+   Float_t         singleIsoMu24eta2p1Prescale;
    Float_t         singleIsoMu27Group;
    Float_t         singleIsoMu27Pass;
    Float_t         singleIsoMu27Prescale;
@@ -520,12 +561,39 @@ public :
    Float_t         singleIsoTkMu22Group;
    Float_t         singleIsoTkMu22Pass;
    Float_t         singleIsoTkMu22Prescale;
+   Float_t         singleIsoTkMu22eta2p1Group;
+   Float_t         singleIsoTkMu22eta2p1Pass;
+   Float_t         singleIsoTkMu22eta2p1Prescale;
+   Float_t         singleIsoTkMu24Group;
+   Float_t         singleIsoTkMu24Pass;
+   Float_t         singleIsoTkMu24Prescale;
+   Float_t         singleIsoTkMu24eta2p1Group;
+   Float_t         singleIsoTkMu24eta2p1Pass;
+   Float_t         singleIsoTkMu24eta2p1Prescale;
    Float_t         singleMu17SingleE12Group;
    Float_t         singleMu17SingleE12Pass;
    Float_t         singleMu17SingleE12Prescale;
+   Float_t         singleMu19eta2p1LooseTau20Group;
+   Float_t         singleMu19eta2p1LooseTau20Pass;
+   Float_t         singleMu19eta2p1LooseTau20Prescale;
+   Float_t         singleMu19eta2p1LooseTau20singleL1Group;
+   Float_t         singleMu19eta2p1LooseTau20singleL1Pass;
+   Float_t         singleMu19eta2p1LooseTau20singleL1Prescale;
+   Float_t         singleMu21eta2p1LooseTau20singleL1Group;
+   Float_t         singleMu21eta2p1LooseTau20singleL1Pass;
+   Float_t         singleMu21eta2p1LooseTau20singleL1Prescale;
+   Float_t         singleMu23SingleE12DZGroup;
+   Float_t         singleMu23SingleE12DZPass;
+   Float_t         singleMu23SingleE12DZPrescale;
    Float_t         singleMu23SingleE12Group;
    Float_t         singleMu23SingleE12Pass;
    Float_t         singleMu23SingleE12Prescale;
+   Float_t         singleMu23SingleE8Group;
+   Float_t         singleMu23SingleE8Pass;
+   Float_t         singleMu23SingleE8Prescale;
+   Float_t         singleMu8SingleE23DZGroup;
+   Float_t         singleMu8SingleE23DZPass;
+   Float_t         singleMu8SingleE23DZPrescale;
    Float_t         singleMuGroup;
    Float_t         singleMuPass;
    Float_t         singleMuPrescale;
@@ -544,6 +612,12 @@ public :
    Float_t         singleMu_leg2_noisoGroup;
    Float_t         singleMu_leg2_noisoPass;
    Float_t         singleMu_leg2_noisoPrescale;
+   Float_t         singleTau140Group;
+   Float_t         singleTau140Pass;
+   Float_t         singleTau140Prescale;
+   Float_t         singleTau140Trk50Group;
+   Float_t         singleTau140Trk50Pass;
+   Float_t         singleTau140Trk50Prescale;
    Float_t         tAbsEta;
    Float_t         tAgainstElectronLooseMVA6;
    Float_t         tAgainstElectronMVA6Raw;
@@ -667,6 +741,24 @@ public :
    Float_t         tMatchesDoubleTau35Path;
    Float_t         tMatchesDoubleTau40Filter;
    Float_t         tMatchesDoubleTau40Path;
+   Float_t         tMatchesDoubleTauCmbIso35RegFilter;
+   Float_t         tMatchesDoubleTauCmbIso35RegPath;
+   Float_t         tMatchesDoubleTauCmbIso40Filter;
+   Float_t         tMatchesDoubleTauCmbIso40Path;
+   Float_t         tMatchesDoubleTauCmbIso40RegFilter;
+   Float_t         tMatchesDoubleTauCmbIso40RegPath;
+   Float_t         tMatchesEle24Tau20Filter;
+   Float_t         tMatchesEle24Tau20L1Path;
+   Float_t         tMatchesEle24Tau20Path;
+   Float_t         tMatchesEle24Tau20sL1Filter;
+   Float_t         tMatchesEle24Tau30Filter;
+   Float_t         tMatchesEle24Tau30Path;
+   Float_t         tMatchesMu19Tau20Filter;
+   Float_t         tMatchesMu19Tau20Path;
+   Float_t         tMatchesMu19Tau20sL1Filter;
+   Float_t         tMatchesMu19Tau20sL1Path;
+   Float_t         tMatchesMu21Tau20sL1Filter;
+   Float_t         tMatchesMu21Tau20sL1Path;
    Float_t         tMtToPfMet_ElectronEnDown;
    Float_t         tMtToPfMet_ElectronEnUp;
    Float_t         tMtToPfMet_JetEnDown;
@@ -709,6 +801,13 @@ public :
    Float_t         tPt_TauEnUp;
    Float_t         tPuCorrPtSum;
    Float_t         tRank;
+   Float_t         tRerunMVArun2v1DBoldDMwLTLoose;
+   Float_t         tRerunMVArun2v1DBoldDMwLTMedium;
+   Float_t         tRerunMVArun2v1DBoldDMwLTTight;
+   Float_t         tRerunMVArun2v1DBoldDMwLTVLoose;
+   Float_t         tRerunMVArun2v1DBoldDMwLTVTight;
+   Float_t         tRerunMVArun2v1DBoldDMwLTVVTight;
+   Float_t         tRerunMVArun2v1DBoldDMwLTraw;
    Float_t         tVZ;
    Float_t         tZTTGenDR;
    Float_t         tZTTGenEta;
@@ -788,8 +887,78 @@ public :
    Float_t         vbfMVA_JetEnDown;
    Float_t         vbfMVA_JetEnUp;
    Float_t         vbfMass;
+   Float_t         vbfMass_JetAbsoluteFlavMapDown;
+   Float_t         vbfMass_JetAbsoluteFlavMapUp;
+   Float_t         vbfMass_JetAbsoluteMPFBiasDown;
+   Float_t         vbfMass_JetAbsoluteMPFBiasUp;
+   Float_t         vbfMass_JetAbsoluteScaleDown;
+   Float_t         vbfMass_JetAbsoluteScaleUp;
+   Float_t         vbfMass_JetAbsoluteStatDown;
+   Float_t         vbfMass_JetAbsoluteStatUp;
+   Float_t         vbfMass_JetClosureDown;
+   Float_t         vbfMass_JetClosureUp;
    Float_t         vbfMass_JetEnDown;
    Float_t         vbfMass_JetEnUp;
+   Float_t         vbfMass_JetFlavorQCDDown;
+   Float_t         vbfMass_JetFlavorQCDUp;
+   Float_t         vbfMass_JetFragmentationDown;
+   Float_t         vbfMass_JetFragmentationUp;
+   Float_t         vbfMass_JetPileUpDataMCDown;
+   Float_t         vbfMass_JetPileUpDataMCUp;
+   Float_t         vbfMass_JetPileUpPtBBDown;
+   Float_t         vbfMass_JetPileUpPtBBUp;
+   Float_t         vbfMass_JetPileUpPtEC1Down;
+   Float_t         vbfMass_JetPileUpPtEC1Up;
+   Float_t         vbfMass_JetPileUpPtEC2Down;
+   Float_t         vbfMass_JetPileUpPtEC2Up;
+   Float_t         vbfMass_JetPileUpPtHFDown;
+   Float_t         vbfMass_JetPileUpPtHFUp;
+   Float_t         vbfMass_JetPileUpPtRefDown;
+   Float_t         vbfMass_JetPileUpPtRefUp;
+   Float_t         vbfMass_JetRelativeBalDown;
+   Float_t         vbfMass_JetRelativeBalUp;
+   Float_t         vbfMass_JetRelativeFSRDown;
+   Float_t         vbfMass_JetRelativeFSRUp;
+   Float_t         vbfMass_JetRelativeJEREC1Down;
+   Float_t         vbfMass_JetRelativeJEREC1Up;
+   Float_t         vbfMass_JetRelativeJEREC2Down;
+   Float_t         vbfMass_JetRelativeJEREC2Up;
+   Float_t         vbfMass_JetRelativeJERHFDown;
+   Float_t         vbfMass_JetRelativeJERHFUp;
+   Float_t         vbfMass_JetRelativePtBBDown;
+   Float_t         vbfMass_JetRelativePtBBUp;
+   Float_t         vbfMass_JetRelativePtEC1Down;
+   Float_t         vbfMass_JetRelativePtEC1Up;
+   Float_t         vbfMass_JetRelativePtEC2Down;
+   Float_t         vbfMass_JetRelativePtEC2Up;
+   Float_t         vbfMass_JetRelativePtHFDown;
+   Float_t         vbfMass_JetRelativePtHFUp;
+   Float_t         vbfMass_JetRelativeStatECDown;
+   Float_t         vbfMass_JetRelativeStatECUp;
+   Float_t         vbfMass_JetRelativeStatFSRDown;
+   Float_t         vbfMass_JetRelativeStatFSRUp;
+   Float_t         vbfMass_JetRelativeStatHFDown;
+   Float_t         vbfMass_JetRelativeStatHFUp;
+   Float_t         vbfMass_JetSinglePionECALDown;
+   Float_t         vbfMass_JetSinglePionECALUp;
+   Float_t         vbfMass_JetSinglePionHCALDown;
+   Float_t         vbfMass_JetSinglePionHCALUp;
+   Float_t         vbfMass_JetSubTotalAbsoluteDown;
+   Float_t         vbfMass_JetSubTotalAbsoluteUp;
+   Float_t         vbfMass_JetSubTotalMCDown;
+   Float_t         vbfMass_JetSubTotalMCUp;
+   Float_t         vbfMass_JetSubTotalPileUpDown;
+   Float_t         vbfMass_JetSubTotalPileUpUp;
+   Float_t         vbfMass_JetSubTotalPtDown;
+   Float_t         vbfMass_JetSubTotalPtUp;
+   Float_t         vbfMass_JetSubTotalRelativeDown;
+   Float_t         vbfMass_JetSubTotalRelativeUp;
+   Float_t         vbfMass_JetSubTotalScaleDown;
+   Float_t         vbfMass_JetSubTotalScaleUp;
+   Float_t         vbfMass_JetTimePtEtaDown;
+   Float_t         vbfMass_JetTimePtEtaUp;
+   Float_t         vbfMass_JetTotalDown;
+   Float_t         vbfMass_JetTotalUp;
    Float_t         vbfNJets20;
    Float_t         vbfNJets20_JetEnDown;
    Float_t         vbfNJets20_JetEnUp;
@@ -822,6 +991,16 @@ public :
    
    TBranch        *b_EmbPtWeight;   //!
    TBranch        *b_Eta;   //!
+   TBranch        *b_Flag_BadChargedCandidateFilter;   //!
+   TBranch        *b_Flag_BadPFMuonFilter;   //!
+   TBranch        *b_Flag_EcalDeadCellTriggerPrimitiveFilter;   //!
+   TBranch        *b_Flag_HBHENoiseFilter;   //!
+   TBranch        *b_Flag_HBHENoiseIsoFilter;   //!
+   TBranch        *b_Flag_badCloneMuonFilter;   //!
+   TBranch        *b_Flag_badGlobalMuonFilter;   //!
+   TBranch        *b_Flag_eeBadScFilter;   //!
+   TBranch        *b_Flag_globalTightHalo2016Filter;   //!
+   TBranch        *b_Flag_goodVertices;   //!
    TBranch        *b_GenWeight;   //!
    TBranch        *b_Ht;   //!
    TBranch        *b_LT;   //!
@@ -868,14 +1047,25 @@ public :
    TBranch        *b_doubleTau40Group;   //!
    TBranch        *b_doubleTau40Pass;   //!
    TBranch        *b_doubleTau40Prescale;   //!
+   TBranch        *b_doubleTauCmbIso35RegGroup;   //!
+   TBranch        *b_doubleTauCmbIso35RegPass;   //!
+   TBranch        *b_doubleTauCmbIso35RegPrescale;   //!
+   TBranch        *b_doubleTauCmbIso40Group;   //!
+   TBranch        *b_doubleTauCmbIso40Pass;   //!
+   TBranch        *b_doubleTauCmbIso40Prescale;   //!
+   TBranch        *b_doubleTauCmbIso40RegGroup;   //!
+   TBranch        *b_doubleTauCmbIso40RegPass;   //!
+   TBranch        *b_doubleTauCmbIso40RegPrescale;   //!
    TBranch        *b_eVetoMVAIso;   //!
    TBranch        *b_eVetoMVAIsoVtx;   //!
    TBranch        *b_eVetoZTTp001dxyz;   //!
    TBranch        *b_eVetoZTTp001dxyzR0;   //!
    TBranch        *b_evt;   //!
+   TBranch        *b_genEta;   //!
    TBranch        *b_genHTT;   //!
    TBranch        *b_genM;   //!
    TBranch        *b_genMass;   //!
+   TBranch        *b_genPhi;   //!
    TBranch        *b_genpT;   //!
    TBranch        *b_genpX;   //!
    TBranch        *b_genpY;   //!
@@ -908,142 +1098,121 @@ public :
    TBranch        *b_j2pu;   //!
    TBranch        *b_j2rawf;   //!
    TBranch        *b_jb1csv;   //!
+   TBranch        *b_jb1csv_CSVL;   //!
    TBranch        *b_jb1eta;   //!
+   TBranch        *b_jb1eta_CSVL;   //!
    TBranch        *b_jb1hadronflavor;   //!
+   TBranch        *b_jb1hadronflavor_CSVL;   //!
    TBranch        *b_jb1partonflavor;   //!
+   TBranch        *b_jb1partonflavor_CSVL;   //!
    TBranch        *b_jb1phi;   //!
+   TBranch        *b_jb1phi_CSVL;   //!
    TBranch        *b_jb1pt;   //!
    TBranch        *b_jb1ptDown;   //!
+   TBranch        *b_jb1ptDown_CSVL;   //!
    TBranch        *b_jb1ptUp;   //!
+   TBranch        *b_jb1ptUp_CSVL;   //!
+   TBranch        *b_jb1pt_CSVL;   //!
    TBranch        *b_jb1pu;   //!
+   TBranch        *b_jb1pu_CSVL;   //!
    TBranch        *b_jb1rawf;   //!
+   TBranch        *b_jb1rawf_CSVL;   //!
    TBranch        *b_jb2csv;   //!
+   TBranch        *b_jb2csv_CSVL;   //!
    TBranch        *b_jb2eta;   //!
+   TBranch        *b_jb2eta_CSVL;   //!
    TBranch        *b_jb2hadronflavor;   //!
+   TBranch        *b_jb2hadronflavor_CSVL;   //!
    TBranch        *b_jb2partonflavor;   //!
+   TBranch        *b_jb2partonflavor_CSVL;   //!
    TBranch        *b_jb2phi;   //!
+   TBranch        *b_jb2phi_CSVL;   //!
    TBranch        *b_jb2pt;   //!
    TBranch        *b_jb2ptDown;   //!
+   TBranch        *b_jb2ptDown_CSVL;   //!
    TBranch        *b_jb2ptUp;   //!
+   TBranch        *b_jb2ptUp_CSVL;   //!
+   TBranch        *b_jb2pt_CSVL;   //!
    TBranch        *b_jb2pu;   //!
+   TBranch        *b_jb2pu_CSVL;   //!
    TBranch        *b_jb2rawf;   //!
+   TBranch        *b_jb2rawf_CSVL;   //!
    TBranch        *b_jetVeto20;   //!
    TBranch        *b_jetVeto20_JetEnDown;   //!
    TBranch        *b_jetVeto20_JetEnUp;   //!
    TBranch        *b_jetVeto30;   //!
+   TBranch        *b_jetVeto30_JetAbsoluteFlavMapDown;   //!
+   TBranch        *b_jetVeto30_JetAbsoluteFlavMapUp;   //!
+   TBranch        *b_jetVeto30_JetAbsoluteMPFBiasDown;   //!
+   TBranch        *b_jetVeto30_JetAbsoluteMPFBiasUp;   //!
+   TBranch        *b_jetVeto30_JetAbsoluteScaleDown;   //!
+   TBranch        *b_jetVeto30_JetAbsoluteScaleUp;   //!
+   TBranch        *b_jetVeto30_JetAbsoluteStatDown;   //!
+   TBranch        *b_jetVeto30_JetAbsoluteStatUp;   //!
+   TBranch        *b_jetVeto30_JetClosureDown;   //!
+   TBranch        *b_jetVeto30_JetClosureUp;   //!
    TBranch        *b_jetVeto30_JetEnDown;   //!
    TBranch        *b_jetVeto30_JetEnUp;   //!
-   /*TBranch        *b_lheweight0;   //!
-   TBranch        *b_lheweight1;   //!
-   TBranch        *b_lheweight10;   //!
-   TBranch        *b_lheweight100;   //!
-   TBranch        *b_lheweight101;   //!
-   TBranch        *b_lheweight102;   //!
-   TBranch        *b_lheweight103;   //!
-   TBranch        *b_lheweight104;   //!
-   TBranch        *b_lheweight105;   //!
-   TBranch        *b_lheweight106;   //!
-   TBranch        *b_lheweight107;   //!
-   TBranch        *b_lheweight108;   //!
-   TBranch        *b_lheweight109;   //!
-   TBranch        *b_lheweight11;   //!
-   TBranch        *b_lheweight110;   //!
-   TBranch        *b_lheweight12;   //!
-   TBranch        *b_lheweight13;   //!
-   TBranch        *b_lheweight14;   //!
-   TBranch        *b_lheweight15;   //!
-   TBranch        *b_lheweight16;   //!
-   TBranch        *b_lheweight17;   //!
-   TBranch        *b_lheweight18;   //!
-   TBranch        *b_lheweight19;   //!
-   TBranch        *b_lheweight2;   //!
-   TBranch        *b_lheweight20;   //!
-   TBranch        *b_lheweight21;   //!
-   TBranch        *b_lheweight22;   //!
-   TBranch        *b_lheweight23;   //!
-   TBranch        *b_lheweight24;   //!
-   TBranch        *b_lheweight25;   //!
-   TBranch        *b_lheweight26;   //!
-   TBranch        *b_lheweight27;   //!
-   TBranch        *b_lheweight28;   //!
-   TBranch        *b_lheweight29;   //!
-   TBranch        *b_lheweight3;   //!
-   TBranch        *b_lheweight30;   //!
-   TBranch        *b_lheweight31;   //!
-   TBranch        *b_lheweight32;   //!
-   TBranch        *b_lheweight33;   //!
-   TBranch        *b_lheweight34;   //!
-   TBranch        *b_lheweight35;   //!
-   TBranch        *b_lheweight36;   //!
-   TBranch        *b_lheweight37;   //!
-   TBranch        *b_lheweight38;   //!
-   TBranch        *b_lheweight39;   //!
-   TBranch        *b_lheweight4;   //!
-   TBranch        *b_lheweight40;   //!
-   TBranch        *b_lheweight41;   //!
-   TBranch        *b_lheweight42;   //!
-   TBranch        *b_lheweight43;   //!
-   TBranch        *b_lheweight44;   //!
-   TBranch        *b_lheweight45;   //!
-   TBranch        *b_lheweight46;   //!
-   TBranch        *b_lheweight47;   //!
-   TBranch        *b_lheweight48;   //!
-   TBranch        *b_lheweight49;   //!
-   TBranch        *b_lheweight5;   //!
-   TBranch        *b_lheweight50;   //!
-   TBranch        *b_lheweight51;   //!
-   TBranch        *b_lheweight52;   //!
-   TBranch        *b_lheweight53;   //!
-   TBranch        *b_lheweight54;   //!
-   TBranch        *b_lheweight55;   //!
-   TBranch        *b_lheweight56;   //!
-   TBranch        *b_lheweight57;   //!
-   TBranch        *b_lheweight58;   //!
-   TBranch        *b_lheweight59;   //!
-   TBranch        *b_lheweight6;   //!
-   TBranch        *b_lheweight60;   //!
-   TBranch        *b_lheweight61;   //!
-   TBranch        *b_lheweight62;   //!
-   TBranch        *b_lheweight63;   //!
-   TBranch        *b_lheweight64;   //!
-   TBranch        *b_lheweight65;   //!
-   TBranch        *b_lheweight66;   //!
-   TBranch        *b_lheweight67;   //!
-   TBranch        *b_lheweight68;   //!
-   TBranch        *b_lheweight69;   //!
-   TBranch        *b_lheweight7;   //!
-   TBranch        *b_lheweight70;   //!
-   TBranch        *b_lheweight71;   //!
-   TBranch        *b_lheweight72;   //!
-   TBranch        *b_lheweight73;   //!
-   TBranch        *b_lheweight74;   //!
-   TBranch        *b_lheweight75;   //!
-   TBranch        *b_lheweight76;   //!
-   TBranch        *b_lheweight77;   //!
-   TBranch        *b_lheweight78;   //!
-   TBranch        *b_lheweight79;   //!
-   TBranch        *b_lheweight8;   //!
-   TBranch        *b_lheweight80;   //!
-   TBranch        *b_lheweight81;   //!
-   TBranch        *b_lheweight82;   //!
-   TBranch        *b_lheweight83;   //!
-   TBranch        *b_lheweight84;   //!
-   TBranch        *b_lheweight85;   //!
-   TBranch        *b_lheweight86;   //!
-   TBranch        *b_lheweight87;   //!
-   TBranch        *b_lheweight88;   //!
-   TBranch        *b_lheweight89;   //!
-   TBranch        *b_lheweight9;   //!
-   TBranch        *b_lheweight90;   //!
-   TBranch        *b_lheweight91;   //!
-   TBranch        *b_lheweight92;   //!
-   TBranch        *b_lheweight93;   //!
-   TBranch        *b_lheweight94;   //!
-   TBranch        *b_lheweight95;   //!
-   TBranch        *b_lheweight96;   //!
-   TBranch        *b_lheweight97;   //!
-   TBranch        *b_lheweight98;   //!
-   TBranch        *b_lheweight99;   //!*/
+   TBranch        *b_jetVeto30_JetFlavorQCDDown;   //!
+   TBranch        *b_jetVeto30_JetFlavorQCDUp;   //!
+   TBranch        *b_jetVeto30_JetFragmentationDown;   //!
+   TBranch        *b_jetVeto30_JetFragmentationUp;   //!
+   TBranch        *b_jetVeto30_JetPileUpDataMCDown;   //!
+   TBranch        *b_jetVeto30_JetPileUpDataMCUp;   //!
+   TBranch        *b_jetVeto30_JetPileUpPtBBDown;   //!
+   TBranch        *b_jetVeto30_JetPileUpPtBBUp;   //!
+   TBranch        *b_jetVeto30_JetPileUpPtEC1Down;   //!
+   TBranch        *b_jetVeto30_JetPileUpPtEC1Up;   //!
+   TBranch        *b_jetVeto30_JetPileUpPtEC2Down;   //!
+   TBranch        *b_jetVeto30_JetPileUpPtEC2Up;   //!
+   TBranch        *b_jetVeto30_JetPileUpPtHFDown;   //!
+   TBranch        *b_jetVeto30_JetPileUpPtHFUp;   //!
+   TBranch        *b_jetVeto30_JetPileUpPtRefDown;   //!
+   TBranch        *b_jetVeto30_JetPileUpPtRefUp;   //!
+   TBranch        *b_jetVeto30_JetRelativeBalDown;   //!
+   TBranch        *b_jetVeto30_JetRelativeBalUp;   //!
+   TBranch        *b_jetVeto30_JetRelativeFSRDown;   //!
+   TBranch        *b_jetVeto30_JetRelativeFSRUp;   //!
+   TBranch        *b_jetVeto30_JetRelativeJEREC1Down;   //!
+   TBranch        *b_jetVeto30_JetRelativeJEREC1Up;   //!
+   TBranch        *b_jetVeto30_JetRelativeJEREC2Down;   //!
+   TBranch        *b_jetVeto30_JetRelativeJEREC2Up;   //!
+   TBranch        *b_jetVeto30_JetRelativeJERHFDown;   //!
+   TBranch        *b_jetVeto30_JetRelativeJERHFUp;   //!
+   TBranch        *b_jetVeto30_JetRelativePtBBDown;   //!
+   TBranch        *b_jetVeto30_JetRelativePtBBUp;   //!
+   TBranch        *b_jetVeto30_JetRelativePtEC1Down;   //!
+   TBranch        *b_jetVeto30_JetRelativePtEC1Up;   //!
+   TBranch        *b_jetVeto30_JetRelativePtEC2Down;   //!
+   TBranch        *b_jetVeto30_JetRelativePtEC2Up;   //!
+   TBranch        *b_jetVeto30_JetRelativePtHFDown;   //!
+   TBranch        *b_jetVeto30_JetRelativePtHFUp;   //!
+   TBranch        *b_jetVeto30_JetRelativeStatECDown;   //!
+   TBranch        *b_jetVeto30_JetRelativeStatECUp;   //!
+   TBranch        *b_jetVeto30_JetRelativeStatFSRDown;   //!
+   TBranch        *b_jetVeto30_JetRelativeStatFSRUp;   //!
+   TBranch        *b_jetVeto30_JetRelativeStatHFDown;   //!
+   TBranch        *b_jetVeto30_JetRelativeStatHFUp;   //!
+   TBranch        *b_jetVeto30_JetSinglePionECALDown;   //!
+   TBranch        *b_jetVeto30_JetSinglePionECALUp;   //!
+   TBranch        *b_jetVeto30_JetSinglePionHCALDown;   //!
+   TBranch        *b_jetVeto30_JetSinglePionHCALUp;   //!
+   TBranch        *b_jetVeto30_JetSubTotalAbsoluteDown;   //!
+   TBranch        *b_jetVeto30_JetSubTotalAbsoluteUp;   //!
+   TBranch        *b_jetVeto30_JetSubTotalMCDown;   //!
+   TBranch        *b_jetVeto30_JetSubTotalMCUp;   //!
+   TBranch        *b_jetVeto30_JetSubTotalPileUpDown;   //!
+   TBranch        *b_jetVeto30_JetSubTotalPileUpUp;   //!
+   TBranch        *b_jetVeto30_JetSubTotalPtDown;   //!
+   TBranch        *b_jetVeto30_JetSubTotalPtUp;   //!
+   TBranch        *b_jetVeto30_JetSubTotalRelativeDown;   //!
+   TBranch        *b_jetVeto30_JetSubTotalRelativeUp;   //!
+   TBranch        *b_jetVeto30_JetSubTotalScaleDown;   //!
+   TBranch        *b_jetVeto30_JetSubTotalScaleUp;   //!
+   TBranch        *b_jetVeto30_JetTimePtEtaDown;   //!
+   TBranch        *b_jetVeto30_JetTimePtEtaUp;   //!
+   TBranch        *b_jetVeto30_JetTotalDown;   //!
+   TBranch        *b_jetVeto30_JetTotalUp;   //!
    TBranch        *b_lumi;   //!
    TBranch        *b_mAbsEta;   //!
    TBranch        *b_mBestTrackType;   //!
@@ -1068,6 +1237,14 @@ public :
    TBranch        *b_mEcalIsoDR03;   //!
    TBranch        *b_mEffectiveArea2011;   //!
    TBranch        *b_mEffectiveArea2012;   //!
+   TBranch        *b_mErsatzGenEta;   //!
+   TBranch        *b_mErsatzGenM;   //!
+   TBranch        *b_mErsatzGenPhi;   //!
+   TBranch        *b_mErsatzGenpT;   //!
+   TBranch        *b_mErsatzGenpX;   //!
+   TBranch        *b_mErsatzGenpY;   //!
+   TBranch        *b_mErsatzVispX;   //!
+   TBranch        *b_mErsatzVispY;   //!
    TBranch        *b_mEta;   //!
    TBranch        *b_mEta_MuonEnDown;   //!
    TBranch        *b_mEta_MuonEnUp;   //!
@@ -1095,10 +1272,14 @@ public :
    TBranch        *b_mIsTracker;   //!
    TBranch        *b_mIsoDB03;   //!
    TBranch        *b_mIsoDB04;   //!
-   TBranch        *b_mIsoMu17Filter;   //!
-   TBranch        *b_mIsoMu18Filter;   //!
    TBranch        *b_mIsoMu22Filter;   //!
+   TBranch        *b_mIsoMu22eta2p1Filter;   //!
+   TBranch        *b_mIsoMu24Filter;   //!
+   TBranch        *b_mIsoMu24eta2p1Filter;   //!
    TBranch        *b_mIsoTkMu22Filter;   //!
+   TBranch        *b_mIsoTkMu22eta2p1Filter;   //!
+   TBranch        *b_mIsoTkMu24Filter;   //!
+   TBranch        *b_mIsoTkMu24eta2p1Filter;   //!
    TBranch        *b_mJetArea;   //!
    TBranch        *b_mJetBtag;   //!
    TBranch        *b_mJetEtaEtaMoment;   //!
@@ -1115,11 +1296,23 @@ public :
    TBranch        *b_mMatchesDoubleESingleMu;   //!
    TBranch        *b_mMatchesDoubleMu;   //!
    TBranch        *b_mMatchesDoubleMuSingleE;   //!
-   TBranch        *b_mMatchesIsoMu17Path;   //!
-   TBranch        *b_mMatchesIsoMu18Path;   //!
-   TBranch        *b_mMatchesMu17Ele12Path;   //!
+   TBranch        *b_mMatchesIsoMu22Path;   //!
+   TBranch        *b_mMatchesIsoMu22eta2p1Path;   //!
+   TBranch        *b_mMatchesIsoMu24Path;   //!
+   TBranch        *b_mMatchesIsoMu24eta2p1Path;   //!
+   TBranch        *b_mMatchesIsoTkMu22Path;   //!
+   TBranch        *b_mMatchesIsoTkMu22eta2p1Path;   //!
+   TBranch        *b_mMatchesIsoTkMu24Path;   //!
+   TBranch        *b_mMatchesIsoTkMu24eta2p1Path;   //!
+   TBranch        *b_mMatchesMu19Tau20Filter;   //!
+   TBranch        *b_mMatchesMu19Tau20Path;   //!
+   TBranch        *b_mMatchesMu19Tau20sL1Filter;   //!
+   TBranch        *b_mMatchesMu19Tau20sL1Path;   //!
+   TBranch        *b_mMatchesMu21Tau20sL1Filter;   //!
+   TBranch        *b_mMatchesMu21Tau20sL1Path;   //!
+   TBranch        *b_mMatchesMu23Ele12DZPath;   //!
    TBranch        *b_mMatchesMu23Ele12Path;   //!
-   TBranch        *b_mMatchesMu8Ele17Path;   //!
+   TBranch        *b_mMatchesMu8Ele23DZPath;   //!
    TBranch        *b_mMatchesMu8Ele23Path;   //!
    TBranch        *b_mMatchesSingleESingleMu;   //!
    TBranch        *b_mMatchesSingleMu;   //!
@@ -1147,9 +1340,9 @@ public :
    TBranch        *b_mMtToPfMet_UnclusteredEnDown;   //!
    TBranch        *b_mMtToPfMet_UnclusteredEnUp;   //!
    TBranch        *b_mMtToPfMet_type1;   //!
-   TBranch        *b_mMu17Ele12Filter;   //!
+   TBranch        *b_mMu23Ele12DZFilter;   //!
    TBranch        *b_mMu23Ele12Filter;   //!
-   TBranch        *b_mMu8Ele17Filter;   //!
+   TBranch        *b_mMu8Ele23DZFilter;   //!
    TBranch        *b_mMu8Ele23Filter;   //!
    TBranch        *b_mMuonHits;   //!
    TBranch        *b_mNearestZMass;   //!
@@ -1215,8 +1408,12 @@ public :
    TBranch        *b_m_t_SS;   //!
    TBranch        *b_m_t_ToMETDPhi_Ty1;   //!
    TBranch        *b_m_t_collinearmass;   //!
+   TBranch        *b_m_t_collinearmass_EleEnDown;   //!
+   TBranch        *b_m_t_collinearmass_EleEnUp;   //!
    TBranch        *b_m_t_collinearmass_JetEnDown;   //!
    TBranch        *b_m_t_collinearmass_JetEnUp;   //!
+   TBranch        *b_m_t_collinearmass_MuEnDown;   //!
+   TBranch        *b_m_t_collinearmass_MuEnUp;   //!
    TBranch        *b_m_t_collinearmass_TauEnDown;   //!
    TBranch        *b_m_t_collinearmass_TauEnUp;   //!
    TBranch        *b_m_t_collinearmass_UnclusteredEnDown;   //!
@@ -1227,6 +1424,10 @@ public :
    TBranch        *b_metcov01;   //!
    TBranch        *b_metcov10;   //!
    TBranch        *b_metcov11;   //!
+   TBranch        *b_metcov00_DESYlike;   //!
+   TBranch        *b_metcov01_DESYlike;   //!
+   TBranch        *b_metcov10_DESYlike;   //!
+   TBranch        *b_metcov11_DESYlike;   //!
    TBranch        *b_muGlbIsoVetoPt10;   //!
    TBranch        *b_muVetoPt15IsoIdVtx;   //!
    TBranch        *b_muVetoPt5;   //!
@@ -1287,15 +1488,21 @@ public :
    TBranch        *b_singleE27SingleTau20SingleL1Group;   //!
    TBranch        *b_singleE27SingleTau20SingleL1Pass;   //!
    TBranch        *b_singleE27SingleTau20SingleL1Prescale;   //!
+   TBranch        *b_singleE27TightGroup;   //!
+   TBranch        *b_singleE27TightPass;   //!
+   TBranch        *b_singleE27TightPrescale;   //!
+   TBranch        *b_singleE27eta2p1LooseGroup;   //!
+   TBranch        *b_singleE27eta2p1LoosePass;   //!
+   TBranch        *b_singleE27eta2p1LoosePrescale;   //!
+   TBranch        *b_singleE27eta2p1TightGroup;   //!
+   TBranch        *b_singleE27eta2p1TightPass;   //!
+   TBranch        *b_singleE27eta2p1TightPrescale;   //!
    TBranch        *b_singleE32SingleTau20SingleL1Group;   //!
    TBranch        *b_singleE32SingleTau20SingleL1Pass;   //!
    TBranch        *b_singleE32SingleTau20SingleL1Prescale;   //!
    TBranch        *b_singleE36SingleTau30Group;   //!
    TBranch        *b_singleE36SingleTau30Pass;   //!
    TBranch        *b_singleE36SingleTau30Prescale;   //!
-   TBranch        *b_singleEGroup;   //!
-   TBranch        *b_singleEPass;   //!
-   TBranch        *b_singleEPrescale;   //!
    TBranch        *b_singleESingleMuGroup;   //!
    TBranch        *b_singleESingleMuPass;   //!
    TBranch        *b_singleESingleMuPrescale;   //!
@@ -1305,18 +1512,21 @@ public :
    TBranch        *b_singleE_leg2Group;   //!
    TBranch        *b_singleE_leg2Pass;   //!
    TBranch        *b_singleE_leg2Prescale;   //!
-   TBranch        *b_singleEeta2p1LooseGroup;   //!
-   TBranch        *b_singleEeta2p1LoosePass;   //!
-   TBranch        *b_singleEeta2p1LoosePrescale;   //!
    TBranch        *b_singleIsoMu20Group;   //!
    TBranch        *b_singleIsoMu20Pass;   //!
    TBranch        *b_singleIsoMu20Prescale;   //!
    TBranch        *b_singleIsoMu22Group;   //!
    TBranch        *b_singleIsoMu22Pass;   //!
    TBranch        *b_singleIsoMu22Prescale;   //!
+   TBranch        *b_singleIsoMu22eta2p1Group;   //!
+   TBranch        *b_singleIsoMu22eta2p1Pass;   //!
+   TBranch        *b_singleIsoMu22eta2p1Prescale;   //!
    TBranch        *b_singleIsoMu24Group;   //!
    TBranch        *b_singleIsoMu24Pass;   //!
    TBranch        *b_singleIsoMu24Prescale;   //!
+   TBranch        *b_singleIsoMu24eta2p1Group;   //!
+   TBranch        *b_singleIsoMu24eta2p1Pass;   //!
+   TBranch        *b_singleIsoMu24eta2p1Prescale;   //!
    TBranch        *b_singleIsoMu27Group;   //!
    TBranch        *b_singleIsoMu27Pass;   //!
    TBranch        *b_singleIsoMu27Prescale;   //!
@@ -1326,12 +1536,39 @@ public :
    TBranch        *b_singleIsoTkMu22Group;   //!
    TBranch        *b_singleIsoTkMu22Pass;   //!
    TBranch        *b_singleIsoTkMu22Prescale;   //!
+   TBranch        *b_singleIsoTkMu22eta2p1Group;   //!
+   TBranch        *b_singleIsoTkMu22eta2p1Pass;   //!
+   TBranch        *b_singleIsoTkMu22eta2p1Prescale;   //!
+   TBranch        *b_singleIsoTkMu24Group;   //!
+   TBranch        *b_singleIsoTkMu24Pass;   //!
+   TBranch        *b_singleIsoTkMu24Prescale;   //!
+   TBranch        *b_singleIsoTkMu24eta2p1Group;   //!
+   TBranch        *b_singleIsoTkMu24eta2p1Pass;   //!
+   TBranch        *b_singleIsoTkMu24eta2p1Prescale;   //!
    TBranch        *b_singleMu17SingleE12Group;   //!
    TBranch        *b_singleMu17SingleE12Pass;   //!
    TBranch        *b_singleMu17SingleE12Prescale;   //!
+   TBranch        *b_singleMu19eta2p1LooseTau20Group;   //!
+   TBranch        *b_singleMu19eta2p1LooseTau20Pass;   //!
+   TBranch        *b_singleMu19eta2p1LooseTau20Prescale;   //!
+   TBranch        *b_singleMu19eta2p1LooseTau20singleL1Group;   //!
+   TBranch        *b_singleMu19eta2p1LooseTau20singleL1Pass;   //!
+   TBranch        *b_singleMu19eta2p1LooseTau20singleL1Prescale;   //!
+   TBranch        *b_singleMu21eta2p1LooseTau20singleL1Group;   //!
+   TBranch        *b_singleMu21eta2p1LooseTau20singleL1Pass;   //!
+   TBranch        *b_singleMu21eta2p1LooseTau20singleL1Prescale;   //!
+   TBranch        *b_singleMu23SingleE12DZGroup;   //!
+   TBranch        *b_singleMu23SingleE12DZPass;   //!
+   TBranch        *b_singleMu23SingleE12DZPrescale;   //!
    TBranch        *b_singleMu23SingleE12Group;   //!
    TBranch        *b_singleMu23SingleE12Pass;   //!
    TBranch        *b_singleMu23SingleE12Prescale;   //!
+   TBranch        *b_singleMu23SingleE8Group;   //!
+   TBranch        *b_singleMu23SingleE8Pass;   //!
+   TBranch        *b_singleMu23SingleE8Prescale;   //!
+   TBranch        *b_singleMu8SingleE23DZGroup;   //!
+   TBranch        *b_singleMu8SingleE23DZPass;   //!
+   TBranch        *b_singleMu8SingleE23DZPrescale;   //!
    TBranch        *b_singleMuGroup;   //!
    TBranch        *b_singleMuPass;   //!
    TBranch        *b_singleMuPrescale;   //!
@@ -1350,6 +1587,12 @@ public :
    TBranch        *b_singleMu_leg2_noisoGroup;   //!
    TBranch        *b_singleMu_leg2_noisoPass;   //!
    TBranch        *b_singleMu_leg2_noisoPrescale;   //!
+   TBranch        *b_singleTau140Group;   //!
+   TBranch        *b_singleTau140Pass;   //!
+   TBranch        *b_singleTau140Prescale;   //!
+   TBranch        *b_singleTau140Trk50Group;   //!
+   TBranch        *b_singleTau140Trk50Pass;   //!
+   TBranch        *b_singleTau140Trk50Prescale;   //!
    TBranch        *b_tAbsEta;   //!
    TBranch        *b_tAgainstElectronLooseMVA6;   //!
    TBranch        *b_tAgainstElectronMVA6Raw;   //!
@@ -1473,6 +1716,24 @@ public :
    TBranch        *b_tMatchesDoubleTau35Path;   //!
    TBranch        *b_tMatchesDoubleTau40Filter;   //!
    TBranch        *b_tMatchesDoubleTau40Path;   //!
+   TBranch        *b_tMatchesDoubleTauCmbIso35RegFilter;   //!
+   TBranch        *b_tMatchesDoubleTauCmbIso35RegPath;   //!
+   TBranch        *b_tMatchesDoubleTauCmbIso40Filter;   //!
+   TBranch        *b_tMatchesDoubleTauCmbIso40Path;   //!
+   TBranch        *b_tMatchesDoubleTauCmbIso40RegFilter;   //!
+   TBranch        *b_tMatchesDoubleTauCmbIso40RegPath;   //!
+   TBranch        *b_tMatchesEle24Tau20Filter;   //!
+   TBranch        *b_tMatchesEle24Tau20L1Path;   //!
+   TBranch        *b_tMatchesEle24Tau20Path;   //!
+   TBranch        *b_tMatchesEle24Tau20sL1Filter;   //!
+   TBranch        *b_tMatchesEle24Tau30Filter;   //!
+   TBranch        *b_tMatchesEle24Tau30Path;   //!
+   TBranch        *b_tMatchesMu19Tau20Filter;   //!
+   TBranch        *b_tMatchesMu19Tau20Path;   //!
+   TBranch        *b_tMatchesMu19Tau20sL1Filter;   //!
+   TBranch        *b_tMatchesMu19Tau20sL1Path;   //!
+   TBranch        *b_tMatchesMu21Tau20sL1Filter;   //!
+   TBranch        *b_tMatchesMu21Tau20sL1Path;   //!
    TBranch        *b_tMtToPfMet_ElectronEnDown;   //!
    TBranch        *b_tMtToPfMet_ElectronEnUp;   //!
    TBranch        *b_tMtToPfMet_JetEnDown;   //!
@@ -1515,6 +1776,13 @@ public :
    TBranch        *b_tPt_TauEnUp;   //!
    TBranch        *b_tPuCorrPtSum;   //!
    TBranch        *b_tRank;   //!
+   TBranch        *b_tRerunMVArun2v1DBoldDMwLTLoose;   //!
+   TBranch        *b_tRerunMVArun2v1DBoldDMwLTMedium;   //!
+   TBranch        *b_tRerunMVArun2v1DBoldDMwLTTight;   //!
+   TBranch        *b_tRerunMVArun2v1DBoldDMwLTVLoose;   //!
+   TBranch        *b_tRerunMVArun2v1DBoldDMwLTVTight;   //!
+   TBranch        *b_tRerunMVArun2v1DBoldDMwLTVVTight;   //!
+   TBranch        *b_tRerunMVArun2v1DBoldDMwLTraw;   //!
    TBranch        *b_tVZ;   //!
    TBranch        *b_tZTTGenDR;   //!
    TBranch        *b_tZTTGenEta;   //!
@@ -1594,8 +1862,78 @@ public :
    TBranch        *b_vbfMVA_JetEnDown;   //!
    TBranch        *b_vbfMVA_JetEnUp;   //!
    TBranch        *b_vbfMass;   //!
+   TBranch        *b_vbfMass_JetAbsoluteFlavMapDown;   //!
+   TBranch        *b_vbfMass_JetAbsoluteFlavMapUp;   //!
+   TBranch        *b_vbfMass_JetAbsoluteMPFBiasDown;   //!
+   TBranch        *b_vbfMass_JetAbsoluteMPFBiasUp;   //!
+   TBranch        *b_vbfMass_JetAbsoluteScaleDown;   //!
+   TBranch        *b_vbfMass_JetAbsoluteScaleUp;   //!
+   TBranch        *b_vbfMass_JetAbsoluteStatDown;   //!
+   TBranch        *b_vbfMass_JetAbsoluteStatUp;   //!
+   TBranch        *b_vbfMass_JetClosureDown;   //!
+   TBranch        *b_vbfMass_JetClosureUp;   //!
    TBranch        *b_vbfMass_JetEnDown;   //!
    TBranch        *b_vbfMass_JetEnUp;   //!
+   TBranch        *b_vbfMass_JetFlavorQCDDown;   //!
+   TBranch        *b_vbfMass_JetFlavorQCDUp;   //!
+   TBranch        *b_vbfMass_JetFragmentationDown;   //!
+   TBranch        *b_vbfMass_JetFragmentationUp;   //!
+   TBranch        *b_vbfMass_JetPileUpDataMCDown;   //!
+   TBranch        *b_vbfMass_JetPileUpDataMCUp;   //!
+   TBranch        *b_vbfMass_JetPileUpPtBBDown;   //!
+   TBranch        *b_vbfMass_JetPileUpPtBBUp;   //!
+   TBranch        *b_vbfMass_JetPileUpPtEC1Down;   //!
+   TBranch        *b_vbfMass_JetPileUpPtEC1Up;   //!
+   TBranch        *b_vbfMass_JetPileUpPtEC2Down;   //!
+   TBranch        *b_vbfMass_JetPileUpPtEC2Up;   //!
+   TBranch        *b_vbfMass_JetPileUpPtHFDown;   //!
+   TBranch        *b_vbfMass_JetPileUpPtHFUp;   //!
+   TBranch        *b_vbfMass_JetPileUpPtRefDown;   //!
+   TBranch        *b_vbfMass_JetPileUpPtRefUp;   //!
+   TBranch        *b_vbfMass_JetRelativeBalDown;   //!
+   TBranch        *b_vbfMass_JetRelativeBalUp;   //!
+   TBranch        *b_vbfMass_JetRelativeFSRDown;   //!
+   TBranch        *b_vbfMass_JetRelativeFSRUp;   //!
+   TBranch        *b_vbfMass_JetRelativeJEREC1Down;   //!
+   TBranch        *b_vbfMass_JetRelativeJEREC1Up;   //!
+   TBranch        *b_vbfMass_JetRelativeJEREC2Down;   //!
+   TBranch        *b_vbfMass_JetRelativeJEREC2Up;   //!
+   TBranch        *b_vbfMass_JetRelativeJERHFDown;   //!
+   TBranch        *b_vbfMass_JetRelativeJERHFUp;   //!
+   TBranch        *b_vbfMass_JetRelativePtBBDown;   //!
+   TBranch        *b_vbfMass_JetRelativePtBBUp;   //!
+   TBranch        *b_vbfMass_JetRelativePtEC1Down;   //!
+   TBranch        *b_vbfMass_JetRelativePtEC1Up;   //!
+   TBranch        *b_vbfMass_JetRelativePtEC2Down;   //!
+   TBranch        *b_vbfMass_JetRelativePtEC2Up;   //!
+   TBranch        *b_vbfMass_JetRelativePtHFDown;   //!
+   TBranch        *b_vbfMass_JetRelativePtHFUp;   //!
+   TBranch        *b_vbfMass_JetRelativeStatECDown;   //!
+   TBranch        *b_vbfMass_JetRelativeStatECUp;   //!
+   TBranch        *b_vbfMass_JetRelativeStatFSRDown;   //!
+   TBranch        *b_vbfMass_JetRelativeStatFSRUp;   //!
+   TBranch        *b_vbfMass_JetRelativeStatHFDown;   //!
+   TBranch        *b_vbfMass_JetRelativeStatHFUp;   //!
+   TBranch        *b_vbfMass_JetSinglePionECALDown;   //!
+   TBranch        *b_vbfMass_JetSinglePionECALUp;   //!
+   TBranch        *b_vbfMass_JetSinglePionHCALDown;   //!
+   TBranch        *b_vbfMass_JetSinglePionHCALUp;   //!
+   TBranch        *b_vbfMass_JetSubTotalAbsoluteDown;   //!
+   TBranch        *b_vbfMass_JetSubTotalAbsoluteUp;   //!
+   TBranch        *b_vbfMass_JetSubTotalMCDown;   //!
+   TBranch        *b_vbfMass_JetSubTotalMCUp;   //!
+   TBranch        *b_vbfMass_JetSubTotalPileUpDown;   //!
+   TBranch        *b_vbfMass_JetSubTotalPileUpUp;   //!
+   TBranch        *b_vbfMass_JetSubTotalPtDown;   //!
+   TBranch        *b_vbfMass_JetSubTotalPtUp;   //!
+   TBranch        *b_vbfMass_JetSubTotalRelativeDown;   //!
+   TBranch        *b_vbfMass_JetSubTotalRelativeUp;   //!
+   TBranch        *b_vbfMass_JetSubTotalScaleDown;   //!
+   TBranch        *b_vbfMass_JetSubTotalScaleUp;   //!
+   TBranch        *b_vbfMass_JetTimePtEtaDown;   //!
+   TBranch        *b_vbfMass_JetTimePtEtaUp;   //!
+   TBranch        *b_vbfMass_JetTotalDown;   //!
+   TBranch        *b_vbfMass_JetTotalUp;   //!
    TBranch        *b_vbfNJets20;   //!
    TBranch        *b_vbfNJets20_JetEnDown;   //!
    TBranch        *b_vbfNJets20_JetEnUp;   //!
@@ -1650,8 +1988,18 @@ void HTauTauTree_mt::Init(TTree* tree)
    _tree = tree;  
    _tree->SetMakeClass(1); // needed especially when compiling
 
-    _tree->SetBranchAddress("EmbPtWeight", &EmbPtWeight, &b_EmbPtWeight);
+   _tree->SetBranchAddress("EmbPtWeight", &EmbPtWeight, &b_EmbPtWeight);
    _tree->SetBranchAddress("Eta", &Eta, &b_Eta);
+   _tree->SetBranchAddress("Flag_BadChargedCandidateFilter", &Flag_BadChargedCandidateFilter, &b_Flag_BadChargedCandidateFilter);
+   _tree->SetBranchAddress("Flag_BadPFMuonFilter", &Flag_BadPFMuonFilter, &b_Flag_BadPFMuonFilter);
+   _tree->SetBranchAddress("Flag_EcalDeadCellTriggerPrimitiveFilter", &Flag_EcalDeadCellTriggerPrimitiveFilter, &b_Flag_EcalDeadCellTriggerPrimitiveFilter);
+   _tree->SetBranchAddress("Flag_HBHENoiseFilter", &Flag_HBHENoiseFilter, &b_Flag_HBHENoiseFilter);
+   _tree->SetBranchAddress("Flag_HBHENoiseIsoFilter", &Flag_HBHENoiseIsoFilter, &b_Flag_HBHENoiseIsoFilter);
+   _tree->SetBranchAddress("Flag_badCloneMuonFilter", &Flag_badCloneMuonFilter, &b_Flag_badCloneMuonFilter);
+   _tree->SetBranchAddress("Flag_badGlobalMuonFilter", &Flag_badGlobalMuonFilter, &b_Flag_badGlobalMuonFilter);
+   _tree->SetBranchAddress("Flag_eeBadScFilter", &Flag_eeBadScFilter, &b_Flag_eeBadScFilter);
+   _tree->SetBranchAddress("Flag_globalTightHalo2016Filter", &Flag_globalTightHalo2016Filter, &b_Flag_globalTightHalo2016Filter);
+   _tree->SetBranchAddress("Flag_goodVertices", &Flag_goodVertices, &b_Flag_goodVertices);
    _tree->SetBranchAddress("GenWeight", &GenWeight, &b_GenWeight);
    _tree->SetBranchAddress("Ht", &Ht, &b_Ht);
    _tree->SetBranchAddress("LT", &LT, &b_LT);
@@ -1698,14 +2046,25 @@ void HTauTauTree_mt::Init(TTree* tree)
    _tree->SetBranchAddress("doubleTau40Group", &doubleTau40Group, &b_doubleTau40Group);
    _tree->SetBranchAddress("doubleTau40Pass", &doubleTau40Pass, &b_doubleTau40Pass);
    _tree->SetBranchAddress("doubleTau40Prescale", &doubleTau40Prescale, &b_doubleTau40Prescale);
+   _tree->SetBranchAddress("doubleTauCmbIso35RegGroup", &doubleTauCmbIso35RegGroup, &b_doubleTauCmbIso35RegGroup);
+   _tree->SetBranchAddress("doubleTauCmbIso35RegPass", &doubleTauCmbIso35RegPass, &b_doubleTauCmbIso35RegPass);
+   _tree->SetBranchAddress("doubleTauCmbIso35RegPrescale", &doubleTauCmbIso35RegPrescale, &b_doubleTauCmbIso35RegPrescale);
+   _tree->SetBranchAddress("doubleTauCmbIso40Group", &doubleTauCmbIso40Group, &b_doubleTauCmbIso40Group);
+   _tree->SetBranchAddress("doubleTauCmbIso40Pass", &doubleTauCmbIso40Pass, &b_doubleTauCmbIso40Pass);
+   _tree->SetBranchAddress("doubleTauCmbIso40Prescale", &doubleTauCmbIso40Prescale, &b_doubleTauCmbIso40Prescale);
+   _tree->SetBranchAddress("doubleTauCmbIso40RegGroup", &doubleTauCmbIso40RegGroup, &b_doubleTauCmbIso40RegGroup);
+   _tree->SetBranchAddress("doubleTauCmbIso40RegPass", &doubleTauCmbIso40RegPass, &b_doubleTauCmbIso40RegPass);
+   _tree->SetBranchAddress("doubleTauCmbIso40RegPrescale", &doubleTauCmbIso40RegPrescale, &b_doubleTauCmbIso40RegPrescale);
    _tree->SetBranchAddress("eVetoMVAIso", &eVetoMVAIso, &b_eVetoMVAIso);
    _tree->SetBranchAddress("eVetoMVAIsoVtx", &eVetoMVAIsoVtx, &b_eVetoMVAIsoVtx);
    _tree->SetBranchAddress("eVetoZTTp001dxyz", &eVetoZTTp001dxyz, &b_eVetoZTTp001dxyz);
    _tree->SetBranchAddress("eVetoZTTp001dxyzR0", &eVetoZTTp001dxyzR0, &b_eVetoZTTp001dxyzR0);
    _tree->SetBranchAddress("evt", &evt, &b_evt);
+   _tree->SetBranchAddress("genEta", &genEta, &b_genEta);
    _tree->SetBranchAddress("genHTT", &genHTT, &b_genHTT);
    _tree->SetBranchAddress("genM", &genM, &b_genM);
    _tree->SetBranchAddress("genMass", &genMass, &b_genMass);
+   _tree->SetBranchAddress("genPhi", &genPhi, &b_genPhi);
    _tree->SetBranchAddress("genpT", &genpT, &b_genpT);
    _tree->SetBranchAddress("genpX", &genpX, &b_genpX);
    _tree->SetBranchAddress("genpY", &genpY, &b_genpY);
@@ -1738,142 +2097,121 @@ void HTauTauTree_mt::Init(TTree* tree)
    _tree->SetBranchAddress("j2pu", &j2pu, &b_j2pu);
    _tree->SetBranchAddress("j2rawf", &j2rawf, &b_j2rawf);
    _tree->SetBranchAddress("jb1csv", &jb1csv, &b_jb1csv);
+   _tree->SetBranchAddress("jb1csv_CSVL", &jb1csv_CSVL, &b_jb1csv_CSVL);
    _tree->SetBranchAddress("jb1eta", &jb1eta, &b_jb1eta);
+   _tree->SetBranchAddress("jb1eta_CSVL", &jb1eta_CSVL, &b_jb1eta_CSVL);
    _tree->SetBranchAddress("jb1hadronflavor", &jb1hadronflavor, &b_jb1hadronflavor);
+   _tree->SetBranchAddress("jb1hadronflavor_CSVL", &jb1hadronflavor_CSVL, &b_jb1hadronflavor_CSVL);
    _tree->SetBranchAddress("jb1partonflavor", &jb1partonflavor, &b_jb1partonflavor);
+   _tree->SetBranchAddress("jb1partonflavor_CSVL", &jb1partonflavor_CSVL, &b_jb1partonflavor_CSVL);
    _tree->SetBranchAddress("jb1phi", &jb1phi, &b_jb1phi);
+   _tree->SetBranchAddress("jb1phi_CSVL", &jb1phi_CSVL, &b_jb1phi_CSVL);
    _tree->SetBranchAddress("jb1pt", &jb1pt, &b_jb1pt);
    _tree->SetBranchAddress("jb1ptDown", &jb1ptDown, &b_jb1ptDown);
+   _tree->SetBranchAddress("jb1ptDown_CSVL", &jb1ptDown_CSVL, &b_jb1ptDown_CSVL);
    _tree->SetBranchAddress("jb1ptUp", &jb1ptUp, &b_jb1ptUp);
+   _tree->SetBranchAddress("jb1ptUp_CSVL", &jb1ptUp_CSVL, &b_jb1ptUp_CSVL);
+   _tree->SetBranchAddress("jb1pt_CSVL", &jb1pt_CSVL, &b_jb1pt_CSVL);
    _tree->SetBranchAddress("jb1pu", &jb1pu, &b_jb1pu);
+   _tree->SetBranchAddress("jb1pu_CSVL", &jb1pu_CSVL, &b_jb1pu_CSVL);
    _tree->SetBranchAddress("jb1rawf", &jb1rawf, &b_jb1rawf);
+   _tree->SetBranchAddress("jb1rawf_CSVL", &jb1rawf_CSVL, &b_jb1rawf_CSVL);
    _tree->SetBranchAddress("jb2csv", &jb2csv, &b_jb2csv);
+   _tree->SetBranchAddress("jb2csv_CSVL", &jb2csv_CSVL, &b_jb2csv_CSVL);
    _tree->SetBranchAddress("jb2eta", &jb2eta, &b_jb2eta);
+   _tree->SetBranchAddress("jb2eta_CSVL", &jb2eta_CSVL, &b_jb2eta_CSVL);
    _tree->SetBranchAddress("jb2hadronflavor", &jb2hadronflavor, &b_jb2hadronflavor);
+   _tree->SetBranchAddress("jb2hadronflavor_CSVL", &jb2hadronflavor_CSVL, &b_jb2hadronflavor_CSVL);
    _tree->SetBranchAddress("jb2partonflavor", &jb2partonflavor, &b_jb2partonflavor);
+   _tree->SetBranchAddress("jb2partonflavor_CSVL", &jb2partonflavor_CSVL, &b_jb2partonflavor_CSVL);
    _tree->SetBranchAddress("jb2phi", &jb2phi, &b_jb2phi);
+   _tree->SetBranchAddress("jb2phi_CSVL", &jb2phi_CSVL, &b_jb2phi_CSVL);
    _tree->SetBranchAddress("jb2pt", &jb2pt, &b_jb2pt);
    _tree->SetBranchAddress("jb2ptDown", &jb2ptDown, &b_jb2ptDown);
+   _tree->SetBranchAddress("jb2ptDown_CSVL", &jb2ptDown_CSVL, &b_jb2ptDown_CSVL);
    _tree->SetBranchAddress("jb2ptUp", &jb2ptUp, &b_jb2ptUp);
+   _tree->SetBranchAddress("jb2ptUp_CSVL", &jb2ptUp_CSVL, &b_jb2ptUp_CSVL);
+   _tree->SetBranchAddress("jb2pt_CSVL", &jb2pt_CSVL, &b_jb2pt_CSVL);
    _tree->SetBranchAddress("jb2pu", &jb2pu, &b_jb2pu);
+   _tree->SetBranchAddress("jb2pu_CSVL", &jb2pu_CSVL, &b_jb2pu_CSVL);
    _tree->SetBranchAddress("jb2rawf", &jb2rawf, &b_jb2rawf);
+   _tree->SetBranchAddress("jb2rawf_CSVL", &jb2rawf_CSVL, &b_jb2rawf_CSVL);
    _tree->SetBranchAddress("jetVeto20", &jetVeto20, &b_jetVeto20);
    _tree->SetBranchAddress("jetVeto20_JetEnDown", &jetVeto20_JetEnDown, &b_jetVeto20_JetEnDown);
    _tree->SetBranchAddress("jetVeto20_JetEnUp", &jetVeto20_JetEnUp, &b_jetVeto20_JetEnUp);
    _tree->SetBranchAddress("jetVeto30", &jetVeto30, &b_jetVeto30);
+   _tree->SetBranchAddress("jetVeto30_JetAbsoluteFlavMapDown", &jetVeto30_JetAbsoluteFlavMapDown, &b_jetVeto30_JetAbsoluteFlavMapDown);
+   _tree->SetBranchAddress("jetVeto30_JetAbsoluteFlavMapUp", &jetVeto30_JetAbsoluteFlavMapUp, &b_jetVeto30_JetAbsoluteFlavMapUp);
+   _tree->SetBranchAddress("jetVeto30_JetAbsoluteMPFBiasDown", &jetVeto30_JetAbsoluteMPFBiasDown, &b_jetVeto30_JetAbsoluteMPFBiasDown);
+   _tree->SetBranchAddress("jetVeto30_JetAbsoluteMPFBiasUp", &jetVeto30_JetAbsoluteMPFBiasUp, &b_jetVeto30_JetAbsoluteMPFBiasUp);
+   _tree->SetBranchAddress("jetVeto30_JetAbsoluteScaleDown", &jetVeto30_JetAbsoluteScaleDown, &b_jetVeto30_JetAbsoluteScaleDown);
+   _tree->SetBranchAddress("jetVeto30_JetAbsoluteScaleUp", &jetVeto30_JetAbsoluteScaleUp, &b_jetVeto30_JetAbsoluteScaleUp);
+   _tree->SetBranchAddress("jetVeto30_JetAbsoluteStatDown", &jetVeto30_JetAbsoluteStatDown, &b_jetVeto30_JetAbsoluteStatDown);
+   _tree->SetBranchAddress("jetVeto30_JetAbsoluteStatUp", &jetVeto30_JetAbsoluteStatUp, &b_jetVeto30_JetAbsoluteStatUp);
+   _tree->SetBranchAddress("jetVeto30_JetClosureDown", &jetVeto30_JetClosureDown, &b_jetVeto30_JetClosureDown);
+   _tree->SetBranchAddress("jetVeto30_JetClosureUp", &jetVeto30_JetClosureUp, &b_jetVeto30_JetClosureUp);
    _tree->SetBranchAddress("jetVeto30_JetEnDown", &jetVeto30_JetEnDown, &b_jetVeto30_JetEnDown);
    _tree->SetBranchAddress("jetVeto30_JetEnUp", &jetVeto30_JetEnUp, &b_jetVeto30_JetEnUp);
-   /*_tree->SetBranchAddress("lheweight0", &lheweight0, &b_lheweight0);
-   _tree->SetBranchAddress("lheweight1", &lheweight1, &b_lheweight1);
-   _tree->SetBranchAddress("lheweight10", &lheweight10, &b_lheweight10);
-   _tree->SetBranchAddress("lheweight100", &lheweight100, &b_lheweight100);
-   _tree->SetBranchAddress("lheweight101", &lheweight101, &b_lheweight101);
-   _tree->SetBranchAddress("lheweight102", &lheweight102, &b_lheweight102);
-   _tree->SetBranchAddress("lheweight103", &lheweight103, &b_lheweight103);
-   _tree->SetBranchAddress("lheweight104", &lheweight104, &b_lheweight104);
-   _tree->SetBranchAddress("lheweight105", &lheweight105, &b_lheweight105);
-   _tree->SetBranchAddress("lheweight106", &lheweight106, &b_lheweight106);
-   _tree->SetBranchAddress("lheweight107", &lheweight107, &b_lheweight107);
-   _tree->SetBranchAddress("lheweight108", &lheweight108, &b_lheweight108);
-   _tree->SetBranchAddress("lheweight109", &lheweight109, &b_lheweight109);
-   _tree->SetBranchAddress("lheweight11", &lheweight11, &b_lheweight11);
-   _tree->SetBranchAddress("lheweight110", &lheweight110, &b_lheweight110);
-   _tree->SetBranchAddress("lheweight12", &lheweight12, &b_lheweight12);
-   _tree->SetBranchAddress("lheweight13", &lheweight13, &b_lheweight13);
-   _tree->SetBranchAddress("lheweight14", &lheweight14, &b_lheweight14);
-   _tree->SetBranchAddress("lheweight15", &lheweight15, &b_lheweight15);
-   _tree->SetBranchAddress("lheweight16", &lheweight16, &b_lheweight16);
-   _tree->SetBranchAddress("lheweight17", &lheweight17, &b_lheweight17);
-   _tree->SetBranchAddress("lheweight18", &lheweight18, &b_lheweight18);
-   _tree->SetBranchAddress("lheweight19", &lheweight19, &b_lheweight19);
-   _tree->SetBranchAddress("lheweight2", &lheweight2, &b_lheweight2);
-   _tree->SetBranchAddress("lheweight20", &lheweight20, &b_lheweight20);
-   _tree->SetBranchAddress("lheweight21", &lheweight21, &b_lheweight21);
-   _tree->SetBranchAddress("lheweight22", &lheweight22, &b_lheweight22);
-   _tree->SetBranchAddress("lheweight23", &lheweight23, &b_lheweight23);
-   _tree->SetBranchAddress("lheweight24", &lheweight24, &b_lheweight24);
-   _tree->SetBranchAddress("lheweight25", &lheweight25, &b_lheweight25);
-   _tree->SetBranchAddress("lheweight26", &lheweight26, &b_lheweight26);
-   _tree->SetBranchAddress("lheweight27", &lheweight27, &b_lheweight27);
-   _tree->SetBranchAddress("lheweight28", &lheweight28, &b_lheweight28);
-   _tree->SetBranchAddress("lheweight29", &lheweight29, &b_lheweight29);
-   _tree->SetBranchAddress("lheweight3", &lheweight3, &b_lheweight3);
-   _tree->SetBranchAddress("lheweight30", &lheweight30, &b_lheweight30);
-   _tree->SetBranchAddress("lheweight31", &lheweight31, &b_lheweight31);
-   _tree->SetBranchAddress("lheweight32", &lheweight32, &b_lheweight32);
-   _tree->SetBranchAddress("lheweight33", &lheweight33, &b_lheweight33);
-   _tree->SetBranchAddress("lheweight34", &lheweight34, &b_lheweight34);
-   _tree->SetBranchAddress("lheweight35", &lheweight35, &b_lheweight35);
-   _tree->SetBranchAddress("lheweight36", &lheweight36, &b_lheweight36);
-   _tree->SetBranchAddress("lheweight37", &lheweight37, &b_lheweight37);
-   _tree->SetBranchAddress("lheweight38", &lheweight38, &b_lheweight38);
-   _tree->SetBranchAddress("lheweight39", &lheweight39, &b_lheweight39);
-   _tree->SetBranchAddress("lheweight4", &lheweight4, &b_lheweight4);
-   _tree->SetBranchAddress("lheweight40", &lheweight40, &b_lheweight40);
-   _tree->SetBranchAddress("lheweight41", &lheweight41, &b_lheweight41);
-   _tree->SetBranchAddress("lheweight42", &lheweight42, &b_lheweight42);
-   _tree->SetBranchAddress("lheweight43", &lheweight43, &b_lheweight43);
-   _tree->SetBranchAddress("lheweight44", &lheweight44, &b_lheweight44);
-   _tree->SetBranchAddress("lheweight45", &lheweight45, &b_lheweight45);
-   _tree->SetBranchAddress("lheweight46", &lheweight46, &b_lheweight46);
-   _tree->SetBranchAddress("lheweight47", &lheweight47, &b_lheweight47);
-   _tree->SetBranchAddress("lheweight48", &lheweight48, &b_lheweight48);
-   _tree->SetBranchAddress("lheweight49", &lheweight49, &b_lheweight49);
-   _tree->SetBranchAddress("lheweight5", &lheweight5, &b_lheweight5);
-   _tree->SetBranchAddress("lheweight50", &lheweight50, &b_lheweight50);
-   _tree->SetBranchAddress("lheweight51", &lheweight51, &b_lheweight51);
-   _tree->SetBranchAddress("lheweight52", &lheweight52, &b_lheweight52);
-   _tree->SetBranchAddress("lheweight53", &lheweight53, &b_lheweight53);
-   _tree->SetBranchAddress("lheweight54", &lheweight54, &b_lheweight54);
-   _tree->SetBranchAddress("lheweight55", &lheweight55, &b_lheweight55);
-   _tree->SetBranchAddress("lheweight56", &lheweight56, &b_lheweight56);
-   _tree->SetBranchAddress("lheweight57", &lheweight57, &b_lheweight57);
-   _tree->SetBranchAddress("lheweight58", &lheweight58, &b_lheweight58);
-   _tree->SetBranchAddress("lheweight59", &lheweight59, &b_lheweight59);
-   _tree->SetBranchAddress("lheweight6", &lheweight6, &b_lheweight6);
-   _tree->SetBranchAddress("lheweight60", &lheweight60, &b_lheweight60);
-   _tree->SetBranchAddress("lheweight61", &lheweight61, &b_lheweight61);
-   _tree->SetBranchAddress("lheweight62", &lheweight62, &b_lheweight62);
-   _tree->SetBranchAddress("lheweight63", &lheweight63, &b_lheweight63);
-   _tree->SetBranchAddress("lheweight64", &lheweight64, &b_lheweight64);
-   _tree->SetBranchAddress("lheweight65", &lheweight65, &b_lheweight65);
-   _tree->SetBranchAddress("lheweight66", &lheweight66, &b_lheweight66);
-   _tree->SetBranchAddress("lheweight67", &lheweight67, &b_lheweight67);
-   _tree->SetBranchAddress("lheweight68", &lheweight68, &b_lheweight68);
-   _tree->SetBranchAddress("lheweight69", &lheweight69, &b_lheweight69);
-   _tree->SetBranchAddress("lheweight7", &lheweight7, &b_lheweight7);
-   _tree->SetBranchAddress("lheweight70", &lheweight70, &b_lheweight70);
-   _tree->SetBranchAddress("lheweight71", &lheweight71, &b_lheweight71);
-   _tree->SetBranchAddress("lheweight72", &lheweight72, &b_lheweight72);
-   _tree->SetBranchAddress("lheweight73", &lheweight73, &b_lheweight73);
-   _tree->SetBranchAddress("lheweight74", &lheweight74, &b_lheweight74);
-   _tree->SetBranchAddress("lheweight75", &lheweight75, &b_lheweight75);
-   _tree->SetBranchAddress("lheweight76", &lheweight76, &b_lheweight76);
-   _tree->SetBranchAddress("lheweight77", &lheweight77, &b_lheweight77);
-   _tree->SetBranchAddress("lheweight78", &lheweight78, &b_lheweight78);
-   _tree->SetBranchAddress("lheweight79", &lheweight79, &b_lheweight79);
-   _tree->SetBranchAddress("lheweight8", &lheweight8, &b_lheweight8);
-   _tree->SetBranchAddress("lheweight80", &lheweight80, &b_lheweight80);
-   _tree->SetBranchAddress("lheweight81", &lheweight81, &b_lheweight81);
-   _tree->SetBranchAddress("lheweight82", &lheweight82, &b_lheweight82);
-   _tree->SetBranchAddress("lheweight83", &lheweight83, &b_lheweight83);
-   _tree->SetBranchAddress("lheweight84", &lheweight84, &b_lheweight84);
-   _tree->SetBranchAddress("lheweight85", &lheweight85, &b_lheweight85);
-   _tree->SetBranchAddress("lheweight86", &lheweight86, &b_lheweight86);
-   _tree->SetBranchAddress("lheweight87", &lheweight87, &b_lheweight87);
-   _tree->SetBranchAddress("lheweight88", &lheweight88, &b_lheweight88);
-   _tree->SetBranchAddress("lheweight89", &lheweight89, &b_lheweight89);
-   _tree->SetBranchAddress("lheweight9", &lheweight9, &b_lheweight9);
-   _tree->SetBranchAddress("lheweight90", &lheweight90, &b_lheweight90);
-   _tree->SetBranchAddress("lheweight91", &lheweight91, &b_lheweight91);
-   _tree->SetBranchAddress("lheweight92", &lheweight92, &b_lheweight92);
-   _tree->SetBranchAddress("lheweight93", &lheweight93, &b_lheweight93);
-   _tree->SetBranchAddress("lheweight94", &lheweight94, &b_lheweight94);
-   _tree->SetBranchAddress("lheweight95", &lheweight95, &b_lheweight95);
-   _tree->SetBranchAddress("lheweight96", &lheweight96, &b_lheweight96);
-   _tree->SetBranchAddress("lheweight97", &lheweight97, &b_lheweight97);
-   _tree->SetBranchAddress("lheweight98", &lheweight98, &b_lheweight98);
-   _tree->SetBranchAddress("lheweight99", &lheweight99, &b_lheweight99);*/
+   _tree->SetBranchAddress("jetVeto30_JetFlavorQCDDown", &jetVeto30_JetFlavorQCDDown, &b_jetVeto30_JetFlavorQCDDown);
+   _tree->SetBranchAddress("jetVeto30_JetFlavorQCDUp", &jetVeto30_JetFlavorQCDUp, &b_jetVeto30_JetFlavorQCDUp);
+   _tree->SetBranchAddress("jetVeto30_JetFragmentationDown", &jetVeto30_JetFragmentationDown, &b_jetVeto30_JetFragmentationDown);
+   _tree->SetBranchAddress("jetVeto30_JetFragmentationUp", &jetVeto30_JetFragmentationUp, &b_jetVeto30_JetFragmentationUp);
+   _tree->SetBranchAddress("jetVeto30_JetPileUpDataMCDown", &jetVeto30_JetPileUpDataMCDown, &b_jetVeto30_JetPileUpDataMCDown);
+   _tree->SetBranchAddress("jetVeto30_JetPileUpDataMCUp", &jetVeto30_JetPileUpDataMCUp, &b_jetVeto30_JetPileUpDataMCUp);
+   _tree->SetBranchAddress("jetVeto30_JetPileUpPtBBDown", &jetVeto30_JetPileUpPtBBDown, &b_jetVeto30_JetPileUpPtBBDown);
+   _tree->SetBranchAddress("jetVeto30_JetPileUpPtBBUp", &jetVeto30_JetPileUpPtBBUp, &b_jetVeto30_JetPileUpPtBBUp);
+   _tree->SetBranchAddress("jetVeto30_JetPileUpPtEC1Down", &jetVeto30_JetPileUpPtEC1Down, &b_jetVeto30_JetPileUpPtEC1Down);
+   _tree->SetBranchAddress("jetVeto30_JetPileUpPtEC1Up", &jetVeto30_JetPileUpPtEC1Up, &b_jetVeto30_JetPileUpPtEC1Up);
+   _tree->SetBranchAddress("jetVeto30_JetPileUpPtEC2Down", &jetVeto30_JetPileUpPtEC2Down, &b_jetVeto30_JetPileUpPtEC2Down);
+   _tree->SetBranchAddress("jetVeto30_JetPileUpPtEC2Up", &jetVeto30_JetPileUpPtEC2Up, &b_jetVeto30_JetPileUpPtEC2Up);
+   _tree->SetBranchAddress("jetVeto30_JetPileUpPtHFDown", &jetVeto30_JetPileUpPtHFDown, &b_jetVeto30_JetPileUpPtHFDown);
+   _tree->SetBranchAddress("jetVeto30_JetPileUpPtHFUp", &jetVeto30_JetPileUpPtHFUp, &b_jetVeto30_JetPileUpPtHFUp);
+   _tree->SetBranchAddress("jetVeto30_JetPileUpPtRefDown", &jetVeto30_JetPileUpPtRefDown, &b_jetVeto30_JetPileUpPtRefDown);
+   _tree->SetBranchAddress("jetVeto30_JetPileUpPtRefUp", &jetVeto30_JetPileUpPtRefUp, &b_jetVeto30_JetPileUpPtRefUp);
+   _tree->SetBranchAddress("jetVeto30_JetRelativeBalDown", &jetVeto30_JetRelativeBalDown, &b_jetVeto30_JetRelativeBalDown);
+   _tree->SetBranchAddress("jetVeto30_JetRelativeBalUp", &jetVeto30_JetRelativeBalUp, &b_jetVeto30_JetRelativeBalUp);
+   _tree->SetBranchAddress("jetVeto30_JetRelativeFSRDown", &jetVeto30_JetRelativeFSRDown, &b_jetVeto30_JetRelativeFSRDown);
+   _tree->SetBranchAddress("jetVeto30_JetRelativeFSRUp", &jetVeto30_JetRelativeFSRUp, &b_jetVeto30_JetRelativeFSRUp);
+   _tree->SetBranchAddress("jetVeto30_JetRelativeJEREC1Down", &jetVeto30_JetRelativeJEREC1Down, &b_jetVeto30_JetRelativeJEREC1Down);
+   _tree->SetBranchAddress("jetVeto30_JetRelativeJEREC1Up", &jetVeto30_JetRelativeJEREC1Up, &b_jetVeto30_JetRelativeJEREC1Up);
+   _tree->SetBranchAddress("jetVeto30_JetRelativeJEREC2Down", &jetVeto30_JetRelativeJEREC2Down, &b_jetVeto30_JetRelativeJEREC2Down);
+   _tree->SetBranchAddress("jetVeto30_JetRelativeJEREC2Up", &jetVeto30_JetRelativeJEREC2Up, &b_jetVeto30_JetRelativeJEREC2Up);
+   _tree->SetBranchAddress("jetVeto30_JetRelativeJERHFDown", &jetVeto30_JetRelativeJERHFDown, &b_jetVeto30_JetRelativeJERHFDown);
+   _tree->SetBranchAddress("jetVeto30_JetRelativeJERHFUp", &jetVeto30_JetRelativeJERHFUp, &b_jetVeto30_JetRelativeJERHFUp);
+   _tree->SetBranchAddress("jetVeto30_JetRelativePtBBDown", &jetVeto30_JetRelativePtBBDown, &b_jetVeto30_JetRelativePtBBDown);
+   _tree->SetBranchAddress("jetVeto30_JetRelativePtBBUp", &jetVeto30_JetRelativePtBBUp, &b_jetVeto30_JetRelativePtBBUp);
+   _tree->SetBranchAddress("jetVeto30_JetRelativePtEC1Down", &jetVeto30_JetRelativePtEC1Down, &b_jetVeto30_JetRelativePtEC1Down);
+   _tree->SetBranchAddress("jetVeto30_JetRelativePtEC1Up", &jetVeto30_JetRelativePtEC1Up, &b_jetVeto30_JetRelativePtEC1Up);
+   _tree->SetBranchAddress("jetVeto30_JetRelativePtEC2Down", &jetVeto30_JetRelativePtEC2Down, &b_jetVeto30_JetRelativePtEC2Down);
+   _tree->SetBranchAddress("jetVeto30_JetRelativePtEC2Up", &jetVeto30_JetRelativePtEC2Up, &b_jetVeto30_JetRelativePtEC2Up);
+   _tree->SetBranchAddress("jetVeto30_JetRelativePtHFDown", &jetVeto30_JetRelativePtHFDown, &b_jetVeto30_JetRelativePtHFDown);
+   _tree->SetBranchAddress("jetVeto30_JetRelativePtHFUp", &jetVeto30_JetRelativePtHFUp, &b_jetVeto30_JetRelativePtHFUp);
+   _tree->SetBranchAddress("jetVeto30_JetRelativeStatECDown", &jetVeto30_JetRelativeStatECDown, &b_jetVeto30_JetRelativeStatECDown);
+   _tree->SetBranchAddress("jetVeto30_JetRelativeStatECUp", &jetVeto30_JetRelativeStatECUp, &b_jetVeto30_JetRelativeStatECUp);
+   _tree->SetBranchAddress("jetVeto30_JetRelativeStatFSRDown", &jetVeto30_JetRelativeStatFSRDown, &b_jetVeto30_JetRelativeStatFSRDown);
+   _tree->SetBranchAddress("jetVeto30_JetRelativeStatFSRUp", &jetVeto30_JetRelativeStatFSRUp, &b_jetVeto30_JetRelativeStatFSRUp);
+   _tree->SetBranchAddress("jetVeto30_JetRelativeStatHFDown", &jetVeto30_JetRelativeStatHFDown, &b_jetVeto30_JetRelativeStatHFDown);
+   _tree->SetBranchAddress("jetVeto30_JetRelativeStatHFUp", &jetVeto30_JetRelativeStatHFUp, &b_jetVeto30_JetRelativeStatHFUp);
+   _tree->SetBranchAddress("jetVeto30_JetSinglePionECALDown", &jetVeto30_JetSinglePionECALDown, &b_jetVeto30_JetSinglePionECALDown);
+   _tree->SetBranchAddress("jetVeto30_JetSinglePionECALUp", &jetVeto30_JetSinglePionECALUp, &b_jetVeto30_JetSinglePionECALUp);
+   _tree->SetBranchAddress("jetVeto30_JetSinglePionHCALDown", &jetVeto30_JetSinglePionHCALDown, &b_jetVeto30_JetSinglePionHCALDown);
+   _tree->SetBranchAddress("jetVeto30_JetSinglePionHCALUp", &jetVeto30_JetSinglePionHCALUp, &b_jetVeto30_JetSinglePionHCALUp);
+   _tree->SetBranchAddress("jetVeto30_JetSubTotalAbsoluteDown", &jetVeto30_JetSubTotalAbsoluteDown, &b_jetVeto30_JetSubTotalAbsoluteDown);
+   _tree->SetBranchAddress("jetVeto30_JetSubTotalAbsoluteUp", &jetVeto30_JetSubTotalAbsoluteUp, &b_jetVeto30_JetSubTotalAbsoluteUp);
+   _tree->SetBranchAddress("jetVeto30_JetSubTotalMCDown", &jetVeto30_JetSubTotalMCDown, &b_jetVeto30_JetSubTotalMCDown);
+   _tree->SetBranchAddress("jetVeto30_JetSubTotalMCUp", &jetVeto30_JetSubTotalMCUp, &b_jetVeto30_JetSubTotalMCUp);
+   _tree->SetBranchAddress("jetVeto30_JetSubTotalPileUpDown", &jetVeto30_JetSubTotalPileUpDown, &b_jetVeto30_JetSubTotalPileUpDown);
+   _tree->SetBranchAddress("jetVeto30_JetSubTotalPileUpUp", &jetVeto30_JetSubTotalPileUpUp, &b_jetVeto30_JetSubTotalPileUpUp);
+   _tree->SetBranchAddress("jetVeto30_JetSubTotalPtDown", &jetVeto30_JetSubTotalPtDown, &b_jetVeto30_JetSubTotalPtDown);
+   _tree->SetBranchAddress("jetVeto30_JetSubTotalPtUp", &jetVeto30_JetSubTotalPtUp, &b_jetVeto30_JetSubTotalPtUp);
+   _tree->SetBranchAddress("jetVeto30_JetSubTotalRelativeDown", &jetVeto30_JetSubTotalRelativeDown, &b_jetVeto30_JetSubTotalRelativeDown);
+   _tree->SetBranchAddress("jetVeto30_JetSubTotalRelativeUp", &jetVeto30_JetSubTotalRelativeUp, &b_jetVeto30_JetSubTotalRelativeUp);
+   _tree->SetBranchAddress("jetVeto30_JetSubTotalScaleDown", &jetVeto30_JetSubTotalScaleDown, &b_jetVeto30_JetSubTotalScaleDown);
+   _tree->SetBranchAddress("jetVeto30_JetSubTotalScaleUp", &jetVeto30_JetSubTotalScaleUp, &b_jetVeto30_JetSubTotalScaleUp);
+   _tree->SetBranchAddress("jetVeto30_JetTimePtEtaDown", &jetVeto30_JetTimePtEtaDown, &b_jetVeto30_JetTimePtEtaDown);
+   _tree->SetBranchAddress("jetVeto30_JetTimePtEtaUp", &jetVeto30_JetTimePtEtaUp, &b_jetVeto30_JetTimePtEtaUp);
+   _tree->SetBranchAddress("jetVeto30_JetTotalDown", &jetVeto30_JetTotalDown, &b_jetVeto30_JetTotalDown);
+   _tree->SetBranchAddress("jetVeto30_JetTotalUp", &jetVeto30_JetTotalUp, &b_jetVeto30_JetTotalUp);
    _tree->SetBranchAddress("lumi", &lumi, &b_lumi);
    _tree->SetBranchAddress("mAbsEta", &mAbsEta, &b_mAbsEta);
    _tree->SetBranchAddress("mBestTrackType", &mBestTrackType, &b_mBestTrackType);
@@ -1898,6 +2236,14 @@ void HTauTauTree_mt::Init(TTree* tree)
    _tree->SetBranchAddress("mEcalIsoDR03", &mEcalIsoDR03, &b_mEcalIsoDR03);
    _tree->SetBranchAddress("mEffectiveArea2011", &mEffectiveArea2011, &b_mEffectiveArea2011);
    _tree->SetBranchAddress("mEffectiveArea2012", &mEffectiveArea2012, &b_mEffectiveArea2012);
+   _tree->SetBranchAddress("mErsatzGenEta", &mErsatzGenEta, &b_mErsatzGenEta);
+   _tree->SetBranchAddress("mErsatzGenM", &mErsatzGenM, &b_mErsatzGenM);
+   _tree->SetBranchAddress("mErsatzGenPhi", &mErsatzGenPhi, &b_mErsatzGenPhi);
+   _tree->SetBranchAddress("mErsatzGenpT", &mErsatzGenpT, &b_mErsatzGenpT);
+   _tree->SetBranchAddress("mErsatzGenpX", &mErsatzGenpX, &b_mErsatzGenpX);
+   _tree->SetBranchAddress("mErsatzGenpY", &mErsatzGenpY, &b_mErsatzGenpY);
+   _tree->SetBranchAddress("mErsatzVispX", &mErsatzVispX, &b_mErsatzVispX);
+   _tree->SetBranchAddress("mErsatzVispY", &mErsatzVispY, &b_mErsatzVispY);
    _tree->SetBranchAddress("mEta", &mEta, &b_mEta);
    _tree->SetBranchAddress("mEta_MuonEnDown", &mEta_MuonEnDown, &b_mEta_MuonEnDown);
    _tree->SetBranchAddress("mEta_MuonEnUp", &mEta_MuonEnUp, &b_mEta_MuonEnUp);
@@ -1925,10 +2271,14 @@ void HTauTauTree_mt::Init(TTree* tree)
    _tree->SetBranchAddress("mIsTracker", &mIsTracker, &b_mIsTracker);
    _tree->SetBranchAddress("mIsoDB03", &mIsoDB03, &b_mIsoDB03);
    _tree->SetBranchAddress("mIsoDB04", &mIsoDB04, &b_mIsoDB04);
-   _tree->SetBranchAddress("mIsoMu17Filter", &mIsoMu17Filter, &b_mIsoMu17Filter);
-   _tree->SetBranchAddress("mIsoMu18Filter", &mIsoMu18Filter, &b_mIsoMu18Filter);
    _tree->SetBranchAddress("mIsoMu22Filter", &mIsoMu22Filter, &b_mIsoMu22Filter);
+   _tree->SetBranchAddress("mIsoMu22eta2p1Filter", &mIsoMu22eta2p1Filter, &b_mIsoMu22eta2p1Filter);
+   _tree->SetBranchAddress("mIsoMu24Filter", &mIsoMu24Filter, &b_mIsoMu24Filter);
+   _tree->SetBranchAddress("mIsoMu24eta2p1Filter", &mIsoMu24eta2p1Filter, &b_mIsoMu24eta2p1Filter);
    _tree->SetBranchAddress("mIsoTkMu22Filter", &mIsoTkMu22Filter, &b_mIsoTkMu22Filter);
+   _tree->SetBranchAddress("mIsoTkMu22eta2p1Filter", &mIsoTkMu22eta2p1Filter, &b_mIsoTkMu22eta2p1Filter);
+   _tree->SetBranchAddress("mIsoTkMu24Filter", &mIsoTkMu24Filter, &b_mIsoTkMu24Filter);
+   _tree->SetBranchAddress("mIsoTkMu24eta2p1Filter", &mIsoTkMu24eta2p1Filter, &b_mIsoTkMu24eta2p1Filter);
    _tree->SetBranchAddress("mJetArea", &mJetArea, &b_mJetArea);
    _tree->SetBranchAddress("mJetBtag", &mJetBtag, &b_mJetBtag);
    _tree->SetBranchAddress("mJetEtaEtaMoment", &mJetEtaEtaMoment, &b_mJetEtaEtaMoment);
@@ -1945,11 +2295,23 @@ void HTauTauTree_mt::Init(TTree* tree)
    _tree->SetBranchAddress("mMatchesDoubleESingleMu", &mMatchesDoubleESingleMu, &b_mMatchesDoubleESingleMu);
    _tree->SetBranchAddress("mMatchesDoubleMu", &mMatchesDoubleMu, &b_mMatchesDoubleMu);
    _tree->SetBranchAddress("mMatchesDoubleMuSingleE", &mMatchesDoubleMuSingleE, &b_mMatchesDoubleMuSingleE);
-   _tree->SetBranchAddress("mMatchesIsoMu17Path", &mMatchesIsoMu17Path, &b_mMatchesIsoMu17Path);
-   _tree->SetBranchAddress("mMatchesIsoMu18Path", &mMatchesIsoMu18Path, &b_mMatchesIsoMu18Path);
-   _tree->SetBranchAddress("mMatchesMu17Ele12Path", &mMatchesMu17Ele12Path, &b_mMatchesMu17Ele12Path);
+   _tree->SetBranchAddress("mMatchesIsoMu22Path", &mMatchesIsoMu22Path, &b_mMatchesIsoMu22Path);
+   _tree->SetBranchAddress("mMatchesIsoMu22eta2p1Path", &mMatchesIsoMu22eta2p1Path, &b_mMatchesIsoMu22eta2p1Path);
+   _tree->SetBranchAddress("mMatchesIsoMu24Path", &mMatchesIsoMu24Path, &b_mMatchesIsoMu24Path);
+   _tree->SetBranchAddress("mMatchesIsoMu24eta2p1Path", &mMatchesIsoMu24eta2p1Path, &b_mMatchesIsoMu24eta2p1Path);
+   _tree->SetBranchAddress("mMatchesIsoTkMu22Path", &mMatchesIsoTkMu22Path, &b_mMatchesIsoTkMu22Path);
+   _tree->SetBranchAddress("mMatchesIsoTkMu22eta2p1Path", &mMatchesIsoTkMu22eta2p1Path, &b_mMatchesIsoTkMu22eta2p1Path);
+   _tree->SetBranchAddress("mMatchesIsoTkMu24Path", &mMatchesIsoTkMu24Path, &b_mMatchesIsoTkMu24Path);
+   _tree->SetBranchAddress("mMatchesIsoTkMu24eta2p1Path", &mMatchesIsoTkMu24eta2p1Path, &b_mMatchesIsoTkMu24eta2p1Path);
+   _tree->SetBranchAddress("mMatchesMu19Tau20Filter", &mMatchesMu19Tau20Filter, &b_mMatchesMu19Tau20Filter);
+   _tree->SetBranchAddress("mMatchesMu19Tau20Path", &mMatchesMu19Tau20Path, &b_mMatchesMu19Tau20Path);
+   _tree->SetBranchAddress("mMatchesMu19Tau20sL1Filter", &mMatchesMu19Tau20sL1Filter, &b_mMatchesMu19Tau20sL1Filter);
+   _tree->SetBranchAddress("mMatchesMu19Tau20sL1Path", &mMatchesMu19Tau20sL1Path, &b_mMatchesMu19Tau20sL1Path);
+   _tree->SetBranchAddress("mMatchesMu21Tau20sL1Filter", &mMatchesMu21Tau20sL1Filter, &b_mMatchesMu21Tau20sL1Filter);
+   _tree->SetBranchAddress("mMatchesMu21Tau20sL1Path", &mMatchesMu21Tau20sL1Path, &b_mMatchesMu21Tau20sL1Path);
+   _tree->SetBranchAddress("mMatchesMu23Ele12DZPath", &mMatchesMu23Ele12DZPath, &b_mMatchesMu23Ele12DZPath);
    _tree->SetBranchAddress("mMatchesMu23Ele12Path", &mMatchesMu23Ele12Path, &b_mMatchesMu23Ele12Path);
-   _tree->SetBranchAddress("mMatchesMu8Ele17Path", &mMatchesMu8Ele17Path, &b_mMatchesMu8Ele17Path);
+   _tree->SetBranchAddress("mMatchesMu8Ele23DZPath", &mMatchesMu8Ele23DZPath, &b_mMatchesMu8Ele23DZPath);
    _tree->SetBranchAddress("mMatchesMu8Ele23Path", &mMatchesMu8Ele23Path, &b_mMatchesMu8Ele23Path);
    _tree->SetBranchAddress("mMatchesSingleESingleMu", &mMatchesSingleESingleMu, &b_mMatchesSingleESingleMu);
    _tree->SetBranchAddress("mMatchesSingleMu", &mMatchesSingleMu, &b_mMatchesSingleMu);
@@ -1977,9 +2339,9 @@ void HTauTauTree_mt::Init(TTree* tree)
    _tree->SetBranchAddress("mMtToPfMet_UnclusteredEnDown", &mMtToPfMet_UnclusteredEnDown, &b_mMtToPfMet_UnclusteredEnDown);
    _tree->SetBranchAddress("mMtToPfMet_UnclusteredEnUp", &mMtToPfMet_UnclusteredEnUp, &b_mMtToPfMet_UnclusteredEnUp);
    _tree->SetBranchAddress("mMtToPfMet_type1", &mMtToPfMet_type1, &b_mMtToPfMet_type1);
-   _tree->SetBranchAddress("mMu17Ele12Filter", &mMu17Ele12Filter, &b_mMu17Ele12Filter);
+   _tree->SetBranchAddress("mMu23Ele12DZFilter", &mMu23Ele12DZFilter, &b_mMu23Ele12DZFilter);
    _tree->SetBranchAddress("mMu23Ele12Filter", &mMu23Ele12Filter, &b_mMu23Ele12Filter);
-   _tree->SetBranchAddress("mMu8Ele17Filter", &mMu8Ele17Filter, &b_mMu8Ele17Filter);
+   _tree->SetBranchAddress("mMu8Ele23DZFilter", &mMu8Ele23DZFilter, &b_mMu8Ele23DZFilter);
    _tree->SetBranchAddress("mMu8Ele23Filter", &mMu8Ele23Filter, &b_mMu8Ele23Filter);
    _tree->SetBranchAddress("mMuonHits", &mMuonHits, &b_mMuonHits);
    _tree->SetBranchAddress("mNearestZMass", &mNearestZMass, &b_mNearestZMass);
@@ -2045,8 +2407,12 @@ void HTauTauTree_mt::Init(TTree* tree)
    _tree->SetBranchAddress("m_t_SS", &m_t_SS, &b_m_t_SS);
    _tree->SetBranchAddress("m_t_ToMETDPhi_Ty1", &m_t_ToMETDPhi_Ty1, &b_m_t_ToMETDPhi_Ty1);
    _tree->SetBranchAddress("m_t_collinearmass", &m_t_collinearmass, &b_m_t_collinearmass);
+   _tree->SetBranchAddress("m_t_collinearmass_EleEnDown", &m_t_collinearmass_EleEnDown, &b_m_t_collinearmass_EleEnDown);
+   _tree->SetBranchAddress("m_t_collinearmass_EleEnUp", &m_t_collinearmass_EleEnUp, &b_m_t_collinearmass_EleEnUp);
    _tree->SetBranchAddress("m_t_collinearmass_JetEnDown", &m_t_collinearmass_JetEnDown, &b_m_t_collinearmass_JetEnDown);
    _tree->SetBranchAddress("m_t_collinearmass_JetEnUp", &m_t_collinearmass_JetEnUp, &b_m_t_collinearmass_JetEnUp);
+   _tree->SetBranchAddress("m_t_collinearmass_MuEnDown", &m_t_collinearmass_MuEnDown, &b_m_t_collinearmass_MuEnDown);
+   _tree->SetBranchAddress("m_t_collinearmass_MuEnUp", &m_t_collinearmass_MuEnUp, &b_m_t_collinearmass_MuEnUp);
    _tree->SetBranchAddress("m_t_collinearmass_TauEnDown", &m_t_collinearmass_TauEnDown, &b_m_t_collinearmass_TauEnDown);
    _tree->SetBranchAddress("m_t_collinearmass_TauEnUp", &m_t_collinearmass_TauEnUp, &b_m_t_collinearmass_TauEnUp);
    _tree->SetBranchAddress("m_t_collinearmass_UnclusteredEnDown", &m_t_collinearmass_UnclusteredEnDown, &b_m_t_collinearmass_UnclusteredEnDown);
@@ -2057,6 +2423,10 @@ void HTauTauTree_mt::Init(TTree* tree)
    _tree->SetBranchAddress("metcov01", &metcov01, &b_metcov01);
    _tree->SetBranchAddress("metcov10", &metcov10, &b_metcov10);
    _tree->SetBranchAddress("metcov11", &metcov11, &b_metcov11);
+   _tree->SetBranchAddress("metcov00_DESYlike", &metcov00_DESYlike, &b_metcov00_DESYlike);
+   _tree->SetBranchAddress("metcov01_DESYlike", &metcov01_DESYlike, &b_metcov01_DESYlike);
+   _tree->SetBranchAddress("metcov10_DESYlike", &metcov10_DESYlike, &b_metcov10_DESYlike);
+   _tree->SetBranchAddress("metcov11_DESYlike", &metcov11_DESYlike, &b_metcov11_DESYlike);
    _tree->SetBranchAddress("muGlbIsoVetoPt10", &muGlbIsoVetoPt10, &b_muGlbIsoVetoPt10);
    _tree->SetBranchAddress("muVetoPt15IsoIdVtx", &muVetoPt15IsoIdVtx, &b_muVetoPt15IsoIdVtx);
    _tree->SetBranchAddress("muVetoPt5", &muVetoPt5, &b_muVetoPt5);
@@ -2117,15 +2487,21 @@ void HTauTauTree_mt::Init(TTree* tree)
    _tree->SetBranchAddress("singleE27SingleTau20SingleL1Group", &singleE27SingleTau20SingleL1Group, &b_singleE27SingleTau20SingleL1Group);
    _tree->SetBranchAddress("singleE27SingleTau20SingleL1Pass", &singleE27SingleTau20SingleL1Pass, &b_singleE27SingleTau20SingleL1Pass);
    _tree->SetBranchAddress("singleE27SingleTau20SingleL1Prescale", &singleE27SingleTau20SingleL1Prescale, &b_singleE27SingleTau20SingleL1Prescale);
+   _tree->SetBranchAddress("singleE27TightGroup", &singleE27TightGroup, &b_singleE27TightGroup);
+   _tree->SetBranchAddress("singleE27TightPass", &singleE27TightPass, &b_singleE27TightPass);
+   _tree->SetBranchAddress("singleE27TightPrescale", &singleE27TightPrescale, &b_singleE27TightPrescale);
+   _tree->SetBranchAddress("singleE27eta2p1LooseGroup", &singleE27eta2p1LooseGroup, &b_singleE27eta2p1LooseGroup);
+   _tree->SetBranchAddress("singleE27eta2p1LoosePass", &singleE27eta2p1LoosePass, &b_singleE27eta2p1LoosePass);
+   _tree->SetBranchAddress("singleE27eta2p1LoosePrescale", &singleE27eta2p1LoosePrescale, &b_singleE27eta2p1LoosePrescale);
+   _tree->SetBranchAddress("singleE27eta2p1TightGroup", &singleE27eta2p1TightGroup, &b_singleE27eta2p1TightGroup);
+   _tree->SetBranchAddress("singleE27eta2p1TightPass", &singleE27eta2p1TightPass, &b_singleE27eta2p1TightPass);
+   _tree->SetBranchAddress("singleE27eta2p1TightPrescale", &singleE27eta2p1TightPrescale, &b_singleE27eta2p1TightPrescale);
    _tree->SetBranchAddress("singleE32SingleTau20SingleL1Group", &singleE32SingleTau20SingleL1Group, &b_singleE32SingleTau20SingleL1Group);
    _tree->SetBranchAddress("singleE32SingleTau20SingleL1Pass", &singleE32SingleTau20SingleL1Pass, &b_singleE32SingleTau20SingleL1Pass);
    _tree->SetBranchAddress("singleE32SingleTau20SingleL1Prescale", &singleE32SingleTau20SingleL1Prescale, &b_singleE32SingleTau20SingleL1Prescale);
    _tree->SetBranchAddress("singleE36SingleTau30Group", &singleE36SingleTau30Group, &b_singleE36SingleTau30Group);
    _tree->SetBranchAddress("singleE36SingleTau30Pass", &singleE36SingleTau30Pass, &b_singleE36SingleTau30Pass);
    _tree->SetBranchAddress("singleE36SingleTau30Prescale", &singleE36SingleTau30Prescale, &b_singleE36SingleTau30Prescale);
-   _tree->SetBranchAddress("singleEGroup", &singleEGroup, &b_singleEGroup);
-   _tree->SetBranchAddress("singleEPass", &singleEPass, &b_singleEPass);
-   _tree->SetBranchAddress("singleEPrescale", &singleEPrescale, &b_singleEPrescale);
    _tree->SetBranchAddress("singleESingleMuGroup", &singleESingleMuGroup, &b_singleESingleMuGroup);
    _tree->SetBranchAddress("singleESingleMuPass", &singleESingleMuPass, &b_singleESingleMuPass);
    _tree->SetBranchAddress("singleESingleMuPrescale", &singleESingleMuPrescale, &b_singleESingleMuPrescale);
@@ -2135,18 +2511,21 @@ void HTauTauTree_mt::Init(TTree* tree)
    _tree->SetBranchAddress("singleE_leg2Group", &singleE_leg2Group, &b_singleE_leg2Group);
    _tree->SetBranchAddress("singleE_leg2Pass", &singleE_leg2Pass, &b_singleE_leg2Pass);
    _tree->SetBranchAddress("singleE_leg2Prescale", &singleE_leg2Prescale, &b_singleE_leg2Prescale);
-   _tree->SetBranchAddress("singleEeta2p1LooseGroup", &singleEeta2p1LooseGroup, &b_singleEeta2p1LooseGroup);
-   _tree->SetBranchAddress("singleEeta2p1LoosePass", &singleEeta2p1LoosePass, &b_singleEeta2p1LoosePass);
-   _tree->SetBranchAddress("singleEeta2p1LoosePrescale", &singleEeta2p1LoosePrescale, &b_singleEeta2p1LoosePrescale);
    _tree->SetBranchAddress("singleIsoMu20Group", &singleIsoMu20Group, &b_singleIsoMu20Group);
    _tree->SetBranchAddress("singleIsoMu20Pass", &singleIsoMu20Pass, &b_singleIsoMu20Pass);
    _tree->SetBranchAddress("singleIsoMu20Prescale", &singleIsoMu20Prescale, &b_singleIsoMu20Prescale);
    _tree->SetBranchAddress("singleIsoMu22Group", &singleIsoMu22Group, &b_singleIsoMu22Group);
    _tree->SetBranchAddress("singleIsoMu22Pass", &singleIsoMu22Pass, &b_singleIsoMu22Pass);
    _tree->SetBranchAddress("singleIsoMu22Prescale", &singleIsoMu22Prescale, &b_singleIsoMu22Prescale);
+   _tree->SetBranchAddress("singleIsoMu22eta2p1Group", &singleIsoMu22eta2p1Group, &b_singleIsoMu22eta2p1Group);
+   _tree->SetBranchAddress("singleIsoMu22eta2p1Pass", &singleIsoMu22eta2p1Pass, &b_singleIsoMu22eta2p1Pass);
+   _tree->SetBranchAddress("singleIsoMu22eta2p1Prescale", &singleIsoMu22eta2p1Prescale, &b_singleIsoMu22eta2p1Prescale);
    _tree->SetBranchAddress("singleIsoMu24Group", &singleIsoMu24Group, &b_singleIsoMu24Group);
    _tree->SetBranchAddress("singleIsoMu24Pass", &singleIsoMu24Pass, &b_singleIsoMu24Pass);
    _tree->SetBranchAddress("singleIsoMu24Prescale", &singleIsoMu24Prescale, &b_singleIsoMu24Prescale);
+   _tree->SetBranchAddress("singleIsoMu24eta2p1Group", &singleIsoMu24eta2p1Group, &b_singleIsoMu24eta2p1Group);
+   _tree->SetBranchAddress("singleIsoMu24eta2p1Pass", &singleIsoMu24eta2p1Pass, &b_singleIsoMu24eta2p1Pass);
+   _tree->SetBranchAddress("singleIsoMu24eta2p1Prescale", &singleIsoMu24eta2p1Prescale, &b_singleIsoMu24eta2p1Prescale);
    _tree->SetBranchAddress("singleIsoMu27Group", &singleIsoMu27Group, &b_singleIsoMu27Group);
    _tree->SetBranchAddress("singleIsoMu27Pass", &singleIsoMu27Pass, &b_singleIsoMu27Pass);
    _tree->SetBranchAddress("singleIsoMu27Prescale", &singleIsoMu27Prescale, &b_singleIsoMu27Prescale);
@@ -2156,12 +2535,39 @@ void HTauTauTree_mt::Init(TTree* tree)
    _tree->SetBranchAddress("singleIsoTkMu22Group", &singleIsoTkMu22Group, &b_singleIsoTkMu22Group);
    _tree->SetBranchAddress("singleIsoTkMu22Pass", &singleIsoTkMu22Pass, &b_singleIsoTkMu22Pass);
    _tree->SetBranchAddress("singleIsoTkMu22Prescale", &singleIsoTkMu22Prescale, &b_singleIsoTkMu22Prescale);
+   _tree->SetBranchAddress("singleIsoTkMu22eta2p1Group", &singleIsoTkMu22eta2p1Group, &b_singleIsoTkMu22eta2p1Group);
+   _tree->SetBranchAddress("singleIsoTkMu22eta2p1Pass", &singleIsoTkMu22eta2p1Pass, &b_singleIsoTkMu22eta2p1Pass);
+   _tree->SetBranchAddress("singleIsoTkMu22eta2p1Prescale", &singleIsoTkMu22eta2p1Prescale, &b_singleIsoTkMu22eta2p1Prescale);
+   _tree->SetBranchAddress("singleIsoTkMu24Group", &singleIsoTkMu24Group, &b_singleIsoTkMu24Group);
+   _tree->SetBranchAddress("singleIsoTkMu24Pass", &singleIsoTkMu24Pass, &b_singleIsoTkMu24Pass);
+   _tree->SetBranchAddress("singleIsoTkMu24Prescale", &singleIsoTkMu24Prescale, &b_singleIsoTkMu24Prescale);
+   _tree->SetBranchAddress("singleIsoTkMu24eta2p1Group", &singleIsoTkMu24eta2p1Group, &b_singleIsoTkMu24eta2p1Group);
+   _tree->SetBranchAddress("singleIsoTkMu24eta2p1Pass", &singleIsoTkMu24eta2p1Pass, &b_singleIsoTkMu24eta2p1Pass);
+   _tree->SetBranchAddress("singleIsoTkMu24eta2p1Prescale", &singleIsoTkMu24eta2p1Prescale, &b_singleIsoTkMu24eta2p1Prescale);
    _tree->SetBranchAddress("singleMu17SingleE12Group", &singleMu17SingleE12Group, &b_singleMu17SingleE12Group);
    _tree->SetBranchAddress("singleMu17SingleE12Pass", &singleMu17SingleE12Pass, &b_singleMu17SingleE12Pass);
    _tree->SetBranchAddress("singleMu17SingleE12Prescale", &singleMu17SingleE12Prescale, &b_singleMu17SingleE12Prescale);
+   _tree->SetBranchAddress("singleMu19eta2p1LooseTau20Group", &singleMu19eta2p1LooseTau20Group, &b_singleMu19eta2p1LooseTau20Group);
+   _tree->SetBranchAddress("singleMu19eta2p1LooseTau20Pass", &singleMu19eta2p1LooseTau20Pass, &b_singleMu19eta2p1LooseTau20Pass);
+   _tree->SetBranchAddress("singleMu19eta2p1LooseTau20Prescale", &singleMu19eta2p1LooseTau20Prescale, &b_singleMu19eta2p1LooseTau20Prescale);
+   _tree->SetBranchAddress("singleMu19eta2p1LooseTau20singleL1Group", &singleMu19eta2p1LooseTau20singleL1Group, &b_singleMu19eta2p1LooseTau20singleL1Group);
+   _tree->SetBranchAddress("singleMu19eta2p1LooseTau20singleL1Pass", &singleMu19eta2p1LooseTau20singleL1Pass, &b_singleMu19eta2p1LooseTau20singleL1Pass);
+   _tree->SetBranchAddress("singleMu19eta2p1LooseTau20singleL1Prescale", &singleMu19eta2p1LooseTau20singleL1Prescale, &b_singleMu19eta2p1LooseTau20singleL1Prescale);
+   _tree->SetBranchAddress("singleMu21eta2p1LooseTau20singleL1Group", &singleMu21eta2p1LooseTau20singleL1Group, &b_singleMu21eta2p1LooseTau20singleL1Group);
+   _tree->SetBranchAddress("singleMu21eta2p1LooseTau20singleL1Pass", &singleMu21eta2p1LooseTau20singleL1Pass, &b_singleMu21eta2p1LooseTau20singleL1Pass);
+   _tree->SetBranchAddress("singleMu21eta2p1LooseTau20singleL1Prescale", &singleMu21eta2p1LooseTau20singleL1Prescale, &b_singleMu21eta2p1LooseTau20singleL1Prescale);
+   _tree->SetBranchAddress("singleMu23SingleE12DZGroup", &singleMu23SingleE12DZGroup, &b_singleMu23SingleE12DZGroup);
+   _tree->SetBranchAddress("singleMu23SingleE12DZPass", &singleMu23SingleE12DZPass, &b_singleMu23SingleE12DZPass);
+   _tree->SetBranchAddress("singleMu23SingleE12DZPrescale", &singleMu23SingleE12DZPrescale, &b_singleMu23SingleE12DZPrescale);
    _tree->SetBranchAddress("singleMu23SingleE12Group", &singleMu23SingleE12Group, &b_singleMu23SingleE12Group);
    _tree->SetBranchAddress("singleMu23SingleE12Pass", &singleMu23SingleE12Pass, &b_singleMu23SingleE12Pass);
    _tree->SetBranchAddress("singleMu23SingleE12Prescale", &singleMu23SingleE12Prescale, &b_singleMu23SingleE12Prescale);
+   _tree->SetBranchAddress("singleMu23SingleE8Group", &singleMu23SingleE8Group, &b_singleMu23SingleE8Group);
+   _tree->SetBranchAddress("singleMu23SingleE8Pass", &singleMu23SingleE8Pass, &b_singleMu23SingleE8Pass);
+   _tree->SetBranchAddress("singleMu23SingleE8Prescale", &singleMu23SingleE8Prescale, &b_singleMu23SingleE8Prescale);
+   _tree->SetBranchAddress("singleMu8SingleE23DZGroup", &singleMu8SingleE23DZGroup, &b_singleMu8SingleE23DZGroup);
+   _tree->SetBranchAddress("singleMu8SingleE23DZPass", &singleMu8SingleE23DZPass, &b_singleMu8SingleE23DZPass);
+   _tree->SetBranchAddress("singleMu8SingleE23DZPrescale", &singleMu8SingleE23DZPrescale, &b_singleMu8SingleE23DZPrescale);
    _tree->SetBranchAddress("singleMuGroup", &singleMuGroup, &b_singleMuGroup);
    _tree->SetBranchAddress("singleMuPass", &singleMuPass, &b_singleMuPass);
    _tree->SetBranchAddress("singleMuPrescale", &singleMuPrescale, &b_singleMuPrescale);
@@ -2180,6 +2586,12 @@ void HTauTauTree_mt::Init(TTree* tree)
    _tree->SetBranchAddress("singleMu_leg2_noisoGroup", &singleMu_leg2_noisoGroup, &b_singleMu_leg2_noisoGroup);
    _tree->SetBranchAddress("singleMu_leg2_noisoPass", &singleMu_leg2_noisoPass, &b_singleMu_leg2_noisoPass);
    _tree->SetBranchAddress("singleMu_leg2_noisoPrescale", &singleMu_leg2_noisoPrescale, &b_singleMu_leg2_noisoPrescale);
+   _tree->SetBranchAddress("singleTau140Group", &singleTau140Group, &b_singleTau140Group);
+   _tree->SetBranchAddress("singleTau140Pass", &singleTau140Pass, &b_singleTau140Pass);
+   _tree->SetBranchAddress("singleTau140Prescale", &singleTau140Prescale, &b_singleTau140Prescale);
+   _tree->SetBranchAddress("singleTau140Trk50Group", &singleTau140Trk50Group, &b_singleTau140Trk50Group);
+   _tree->SetBranchAddress("singleTau140Trk50Pass", &singleTau140Trk50Pass, &b_singleTau140Trk50Pass);
+   _tree->SetBranchAddress("singleTau140Trk50Prescale", &singleTau140Trk50Prescale, &b_singleTau140Trk50Prescale);
    _tree->SetBranchAddress("tAbsEta", &tAbsEta, &b_tAbsEta);
    _tree->SetBranchAddress("tAgainstElectronLooseMVA6", &tAgainstElectronLooseMVA6, &b_tAgainstElectronLooseMVA6);
    _tree->SetBranchAddress("tAgainstElectronMVA6Raw", &tAgainstElectronMVA6Raw, &b_tAgainstElectronMVA6Raw);
@@ -2303,6 +2715,24 @@ void HTauTauTree_mt::Init(TTree* tree)
    _tree->SetBranchAddress("tMatchesDoubleTau35Path", &tMatchesDoubleTau35Path, &b_tMatchesDoubleTau35Path);
    _tree->SetBranchAddress("tMatchesDoubleTau40Filter", &tMatchesDoubleTau40Filter, &b_tMatchesDoubleTau40Filter);
    _tree->SetBranchAddress("tMatchesDoubleTau40Path", &tMatchesDoubleTau40Path, &b_tMatchesDoubleTau40Path);
+   _tree->SetBranchAddress("tMatchesDoubleTauCmbIso35RegFilter", &tMatchesDoubleTauCmbIso35RegFilter, &b_tMatchesDoubleTauCmbIso35RegFilter);
+   _tree->SetBranchAddress("tMatchesDoubleTauCmbIso35RegPath", &tMatchesDoubleTauCmbIso35RegPath, &b_tMatchesDoubleTauCmbIso35RegPath);
+   _tree->SetBranchAddress("tMatchesDoubleTauCmbIso40Filter", &tMatchesDoubleTauCmbIso40Filter, &b_tMatchesDoubleTauCmbIso40Filter);
+   _tree->SetBranchAddress("tMatchesDoubleTauCmbIso40Path", &tMatchesDoubleTauCmbIso40Path, &b_tMatchesDoubleTauCmbIso40Path);
+   _tree->SetBranchAddress("tMatchesDoubleTauCmbIso40RegFilter", &tMatchesDoubleTauCmbIso40RegFilter, &b_tMatchesDoubleTauCmbIso40RegFilter);
+   _tree->SetBranchAddress("tMatchesDoubleTauCmbIso40RegPath", &tMatchesDoubleTauCmbIso40RegPath, &b_tMatchesDoubleTauCmbIso40RegPath);
+   _tree->SetBranchAddress("tMatchesEle24Tau20Filter", &tMatchesEle24Tau20Filter, &b_tMatchesEle24Tau20Filter);
+   _tree->SetBranchAddress("tMatchesEle24Tau20L1Path", &tMatchesEle24Tau20L1Path, &b_tMatchesEle24Tau20L1Path);
+   _tree->SetBranchAddress("tMatchesEle24Tau20Path", &tMatchesEle24Tau20Path, &b_tMatchesEle24Tau20Path);
+   _tree->SetBranchAddress("tMatchesEle24Tau20sL1Filter", &tMatchesEle24Tau20sL1Filter, &b_tMatchesEle24Tau20sL1Filter);
+   _tree->SetBranchAddress("tMatchesEle24Tau30Filter", &tMatchesEle24Tau30Filter, &b_tMatchesEle24Tau30Filter);
+   _tree->SetBranchAddress("tMatchesEle24Tau30Path", &tMatchesEle24Tau30Path, &b_tMatchesEle24Tau30Path);
+   _tree->SetBranchAddress("tMatchesMu19Tau20Filter", &tMatchesMu19Tau20Filter, &b_tMatchesMu19Tau20Filter);
+   _tree->SetBranchAddress("tMatchesMu19Tau20Path", &tMatchesMu19Tau20Path, &b_tMatchesMu19Tau20Path);
+   _tree->SetBranchAddress("tMatchesMu19Tau20sL1Filter", &tMatchesMu19Tau20sL1Filter, &b_tMatchesMu19Tau20sL1Filter);
+   _tree->SetBranchAddress("tMatchesMu19Tau20sL1Path", &tMatchesMu19Tau20sL1Path, &b_tMatchesMu19Tau20sL1Path);
+   _tree->SetBranchAddress("tMatchesMu21Tau20sL1Filter", &tMatchesMu21Tau20sL1Filter, &b_tMatchesMu21Tau20sL1Filter);
+   _tree->SetBranchAddress("tMatchesMu21Tau20sL1Path", &tMatchesMu21Tau20sL1Path, &b_tMatchesMu21Tau20sL1Path);
    _tree->SetBranchAddress("tMtToPfMet_ElectronEnDown", &tMtToPfMet_ElectronEnDown, &b_tMtToPfMet_ElectronEnDown);
    _tree->SetBranchAddress("tMtToPfMet_ElectronEnUp", &tMtToPfMet_ElectronEnUp, &b_tMtToPfMet_ElectronEnUp);
    _tree->SetBranchAddress("tMtToPfMet_JetEnDown", &tMtToPfMet_JetEnDown, &b_tMtToPfMet_JetEnDown);
@@ -2345,6 +2775,13 @@ void HTauTauTree_mt::Init(TTree* tree)
    _tree->SetBranchAddress("tPt_TauEnUp", &tPt_TauEnUp, &b_tPt_TauEnUp);
    _tree->SetBranchAddress("tPuCorrPtSum", &tPuCorrPtSum, &b_tPuCorrPtSum);
    _tree->SetBranchAddress("tRank", &tRank, &b_tRank);
+   _tree->SetBranchAddress("tRerunMVArun2v1DBoldDMwLTLoose", &tRerunMVArun2v1DBoldDMwLTLoose, &b_tRerunMVArun2v1DBoldDMwLTLoose);
+   _tree->SetBranchAddress("tRerunMVArun2v1DBoldDMwLTMedium", &tRerunMVArun2v1DBoldDMwLTMedium, &b_tRerunMVArun2v1DBoldDMwLTMedium);
+   _tree->SetBranchAddress("tRerunMVArun2v1DBoldDMwLTTight", &tRerunMVArun2v1DBoldDMwLTTight, &b_tRerunMVArun2v1DBoldDMwLTTight);
+   _tree->SetBranchAddress("tRerunMVArun2v1DBoldDMwLTVLoose", &tRerunMVArun2v1DBoldDMwLTVLoose, &b_tRerunMVArun2v1DBoldDMwLTVLoose);
+   _tree->SetBranchAddress("tRerunMVArun2v1DBoldDMwLTVTight", &tRerunMVArun2v1DBoldDMwLTVTight, &b_tRerunMVArun2v1DBoldDMwLTVTight);
+   _tree->SetBranchAddress("tRerunMVArun2v1DBoldDMwLTVVTight", &tRerunMVArun2v1DBoldDMwLTVVTight, &b_tRerunMVArun2v1DBoldDMwLTVVTight);
+   _tree->SetBranchAddress("tRerunMVArun2v1DBoldDMwLTraw", &tRerunMVArun2v1DBoldDMwLTraw, &b_tRerunMVArun2v1DBoldDMwLTraw);
    _tree->SetBranchAddress("tVZ", &tVZ, &b_tVZ);
    _tree->SetBranchAddress("tZTTGenDR", &tZTTGenDR, &b_tZTTGenDR);
    _tree->SetBranchAddress("tZTTGenEta", &tZTTGenEta, &b_tZTTGenEta);
@@ -2424,8 +2861,78 @@ void HTauTauTree_mt::Init(TTree* tree)
    _tree->SetBranchAddress("vbfMVA_JetEnDown", &vbfMVA_JetEnDown, &b_vbfMVA_JetEnDown);
    _tree->SetBranchAddress("vbfMVA_JetEnUp", &vbfMVA_JetEnUp, &b_vbfMVA_JetEnUp);
    _tree->SetBranchAddress("vbfMass", &vbfMass, &b_vbfMass);
+   _tree->SetBranchAddress("vbfMass_JetAbsoluteFlavMapDown", &vbfMass_JetAbsoluteFlavMapDown, &b_vbfMass_JetAbsoluteFlavMapDown);
+   _tree->SetBranchAddress("vbfMass_JetAbsoluteFlavMapUp", &vbfMass_JetAbsoluteFlavMapUp, &b_vbfMass_JetAbsoluteFlavMapUp);
+   _tree->SetBranchAddress("vbfMass_JetAbsoluteMPFBiasDown", &vbfMass_JetAbsoluteMPFBiasDown, &b_vbfMass_JetAbsoluteMPFBiasDown);
+   _tree->SetBranchAddress("vbfMass_JetAbsoluteMPFBiasUp", &vbfMass_JetAbsoluteMPFBiasUp, &b_vbfMass_JetAbsoluteMPFBiasUp);
+   _tree->SetBranchAddress("vbfMass_JetAbsoluteScaleDown", &vbfMass_JetAbsoluteScaleDown, &b_vbfMass_JetAbsoluteScaleDown);
+   _tree->SetBranchAddress("vbfMass_JetAbsoluteScaleUp", &vbfMass_JetAbsoluteScaleUp, &b_vbfMass_JetAbsoluteScaleUp);
+   _tree->SetBranchAddress("vbfMass_JetAbsoluteStatDown", &vbfMass_JetAbsoluteStatDown, &b_vbfMass_JetAbsoluteStatDown);
+   _tree->SetBranchAddress("vbfMass_JetAbsoluteStatUp", &vbfMass_JetAbsoluteStatUp, &b_vbfMass_JetAbsoluteStatUp);
+   _tree->SetBranchAddress("vbfMass_JetClosureDown", &vbfMass_JetClosureDown, &b_vbfMass_JetClosureDown);
+   _tree->SetBranchAddress("vbfMass_JetClosureUp", &vbfMass_JetClosureUp, &b_vbfMass_JetClosureUp);
    _tree->SetBranchAddress("vbfMass_JetEnDown", &vbfMass_JetEnDown, &b_vbfMass_JetEnDown);
    _tree->SetBranchAddress("vbfMass_JetEnUp", &vbfMass_JetEnUp, &b_vbfMass_JetEnUp);
+   _tree->SetBranchAddress("vbfMass_JetFlavorQCDDown", &vbfMass_JetFlavorQCDDown, &b_vbfMass_JetFlavorQCDDown);
+   _tree->SetBranchAddress("vbfMass_JetFlavorQCDUp", &vbfMass_JetFlavorQCDUp, &b_vbfMass_JetFlavorQCDUp);
+   _tree->SetBranchAddress("vbfMass_JetFragmentationDown", &vbfMass_JetFragmentationDown, &b_vbfMass_JetFragmentationDown);
+   _tree->SetBranchAddress("vbfMass_JetFragmentationUp", &vbfMass_JetFragmentationUp, &b_vbfMass_JetFragmentationUp);
+   _tree->SetBranchAddress("vbfMass_JetPileUpDataMCDown", &vbfMass_JetPileUpDataMCDown, &b_vbfMass_JetPileUpDataMCDown);
+   _tree->SetBranchAddress("vbfMass_JetPileUpDataMCUp", &vbfMass_JetPileUpDataMCUp, &b_vbfMass_JetPileUpDataMCUp);
+   _tree->SetBranchAddress("vbfMass_JetPileUpPtBBDown", &vbfMass_JetPileUpPtBBDown, &b_vbfMass_JetPileUpPtBBDown);
+   _tree->SetBranchAddress("vbfMass_JetPileUpPtBBUp", &vbfMass_JetPileUpPtBBUp, &b_vbfMass_JetPileUpPtBBUp);
+   _tree->SetBranchAddress("vbfMass_JetPileUpPtEC1Down", &vbfMass_JetPileUpPtEC1Down, &b_vbfMass_JetPileUpPtEC1Down);
+   _tree->SetBranchAddress("vbfMass_JetPileUpPtEC1Up", &vbfMass_JetPileUpPtEC1Up, &b_vbfMass_JetPileUpPtEC1Up);
+   _tree->SetBranchAddress("vbfMass_JetPileUpPtEC2Down", &vbfMass_JetPileUpPtEC2Down, &b_vbfMass_JetPileUpPtEC2Down);
+   _tree->SetBranchAddress("vbfMass_JetPileUpPtEC2Up", &vbfMass_JetPileUpPtEC2Up, &b_vbfMass_JetPileUpPtEC2Up);
+   _tree->SetBranchAddress("vbfMass_JetPileUpPtHFDown", &vbfMass_JetPileUpPtHFDown, &b_vbfMass_JetPileUpPtHFDown);
+   _tree->SetBranchAddress("vbfMass_JetPileUpPtHFUp", &vbfMass_JetPileUpPtHFUp, &b_vbfMass_JetPileUpPtHFUp);
+   _tree->SetBranchAddress("vbfMass_JetPileUpPtRefDown", &vbfMass_JetPileUpPtRefDown, &b_vbfMass_JetPileUpPtRefDown);
+   _tree->SetBranchAddress("vbfMass_JetPileUpPtRefUp", &vbfMass_JetPileUpPtRefUp, &b_vbfMass_JetPileUpPtRefUp);
+   _tree->SetBranchAddress("vbfMass_JetRelativeBalDown", &vbfMass_JetRelativeBalDown, &b_vbfMass_JetRelativeBalDown);
+   _tree->SetBranchAddress("vbfMass_JetRelativeBalUp", &vbfMass_JetRelativeBalUp, &b_vbfMass_JetRelativeBalUp);
+   _tree->SetBranchAddress("vbfMass_JetRelativeFSRDown", &vbfMass_JetRelativeFSRDown, &b_vbfMass_JetRelativeFSRDown);
+   _tree->SetBranchAddress("vbfMass_JetRelativeFSRUp", &vbfMass_JetRelativeFSRUp, &b_vbfMass_JetRelativeFSRUp);
+   _tree->SetBranchAddress("vbfMass_JetRelativeJEREC1Down", &vbfMass_JetRelativeJEREC1Down, &b_vbfMass_JetRelativeJEREC1Down);
+   _tree->SetBranchAddress("vbfMass_JetRelativeJEREC1Up", &vbfMass_JetRelativeJEREC1Up, &b_vbfMass_JetRelativeJEREC1Up);
+   _tree->SetBranchAddress("vbfMass_JetRelativeJEREC2Down", &vbfMass_JetRelativeJEREC2Down, &b_vbfMass_JetRelativeJEREC2Down);
+   _tree->SetBranchAddress("vbfMass_JetRelativeJEREC2Up", &vbfMass_JetRelativeJEREC2Up, &b_vbfMass_JetRelativeJEREC2Up);
+   _tree->SetBranchAddress("vbfMass_JetRelativeJERHFDown", &vbfMass_JetRelativeJERHFDown, &b_vbfMass_JetRelativeJERHFDown);
+   _tree->SetBranchAddress("vbfMass_JetRelativeJERHFUp", &vbfMass_JetRelativeJERHFUp, &b_vbfMass_JetRelativeJERHFUp);
+   _tree->SetBranchAddress("vbfMass_JetRelativePtBBDown", &vbfMass_JetRelativePtBBDown, &b_vbfMass_JetRelativePtBBDown);
+   _tree->SetBranchAddress("vbfMass_JetRelativePtBBUp", &vbfMass_JetRelativePtBBUp, &b_vbfMass_JetRelativePtBBUp);
+   _tree->SetBranchAddress("vbfMass_JetRelativePtEC1Down", &vbfMass_JetRelativePtEC1Down, &b_vbfMass_JetRelativePtEC1Down);
+   _tree->SetBranchAddress("vbfMass_JetRelativePtEC1Up", &vbfMass_JetRelativePtEC1Up, &b_vbfMass_JetRelativePtEC1Up);
+   _tree->SetBranchAddress("vbfMass_JetRelativePtEC2Down", &vbfMass_JetRelativePtEC2Down, &b_vbfMass_JetRelativePtEC2Down);
+   _tree->SetBranchAddress("vbfMass_JetRelativePtEC2Up", &vbfMass_JetRelativePtEC2Up, &b_vbfMass_JetRelativePtEC2Up);
+   _tree->SetBranchAddress("vbfMass_JetRelativePtHFDown", &vbfMass_JetRelativePtHFDown, &b_vbfMass_JetRelativePtHFDown);
+   _tree->SetBranchAddress("vbfMass_JetRelativePtHFUp", &vbfMass_JetRelativePtHFUp, &b_vbfMass_JetRelativePtHFUp);
+   _tree->SetBranchAddress("vbfMass_JetRelativeStatECDown", &vbfMass_JetRelativeStatECDown, &b_vbfMass_JetRelativeStatECDown);
+   _tree->SetBranchAddress("vbfMass_JetRelativeStatECUp", &vbfMass_JetRelativeStatECUp, &b_vbfMass_JetRelativeStatECUp);
+   _tree->SetBranchAddress("vbfMass_JetRelativeStatFSRDown", &vbfMass_JetRelativeStatFSRDown, &b_vbfMass_JetRelativeStatFSRDown);
+   _tree->SetBranchAddress("vbfMass_JetRelativeStatFSRUp", &vbfMass_JetRelativeStatFSRUp, &b_vbfMass_JetRelativeStatFSRUp);
+   _tree->SetBranchAddress("vbfMass_JetRelativeStatHFDown", &vbfMass_JetRelativeStatHFDown, &b_vbfMass_JetRelativeStatHFDown);
+   _tree->SetBranchAddress("vbfMass_JetRelativeStatHFUp", &vbfMass_JetRelativeStatHFUp, &b_vbfMass_JetRelativeStatHFUp);
+   _tree->SetBranchAddress("vbfMass_JetSinglePionECALDown", &vbfMass_JetSinglePionECALDown, &b_vbfMass_JetSinglePionECALDown);
+   _tree->SetBranchAddress("vbfMass_JetSinglePionECALUp", &vbfMass_JetSinglePionECALUp, &b_vbfMass_JetSinglePionECALUp);
+   _tree->SetBranchAddress("vbfMass_JetSinglePionHCALDown", &vbfMass_JetSinglePionHCALDown, &b_vbfMass_JetSinglePionHCALDown);
+   _tree->SetBranchAddress("vbfMass_JetSinglePionHCALUp", &vbfMass_JetSinglePionHCALUp, &b_vbfMass_JetSinglePionHCALUp);
+   _tree->SetBranchAddress("vbfMass_JetSubTotalAbsoluteDown", &vbfMass_JetSubTotalAbsoluteDown, &b_vbfMass_JetSubTotalAbsoluteDown);
+   _tree->SetBranchAddress("vbfMass_JetSubTotalAbsoluteUp", &vbfMass_JetSubTotalAbsoluteUp, &b_vbfMass_JetSubTotalAbsoluteUp);
+   _tree->SetBranchAddress("vbfMass_JetSubTotalMCDown", &vbfMass_JetSubTotalMCDown, &b_vbfMass_JetSubTotalMCDown);
+   _tree->SetBranchAddress("vbfMass_JetSubTotalMCUp", &vbfMass_JetSubTotalMCUp, &b_vbfMass_JetSubTotalMCUp);
+   _tree->SetBranchAddress("vbfMass_JetSubTotalPileUpDown", &vbfMass_JetSubTotalPileUpDown, &b_vbfMass_JetSubTotalPileUpDown);
+   _tree->SetBranchAddress("vbfMass_JetSubTotalPileUpUp", &vbfMass_JetSubTotalPileUpUp, &b_vbfMass_JetSubTotalPileUpUp);
+   _tree->SetBranchAddress("vbfMass_JetSubTotalPtDown", &vbfMass_JetSubTotalPtDown, &b_vbfMass_JetSubTotalPtDown);
+   _tree->SetBranchAddress("vbfMass_JetSubTotalPtUp", &vbfMass_JetSubTotalPtUp, &b_vbfMass_JetSubTotalPtUp);
+   _tree->SetBranchAddress("vbfMass_JetSubTotalRelativeDown", &vbfMass_JetSubTotalRelativeDown, &b_vbfMass_JetSubTotalRelativeDown);
+   _tree->SetBranchAddress("vbfMass_JetSubTotalRelativeUp", &vbfMass_JetSubTotalRelativeUp, &b_vbfMass_JetSubTotalRelativeUp);
+   _tree->SetBranchAddress("vbfMass_JetSubTotalScaleDown", &vbfMass_JetSubTotalScaleDown, &b_vbfMass_JetSubTotalScaleDown);
+   _tree->SetBranchAddress("vbfMass_JetSubTotalScaleUp", &vbfMass_JetSubTotalScaleUp, &b_vbfMass_JetSubTotalScaleUp);
+   _tree->SetBranchAddress("vbfMass_JetTimePtEtaDown", &vbfMass_JetTimePtEtaDown, &b_vbfMass_JetTimePtEtaDown);
+   _tree->SetBranchAddress("vbfMass_JetTimePtEtaUp", &vbfMass_JetTimePtEtaUp, &b_vbfMass_JetTimePtEtaUp);
+   _tree->SetBranchAddress("vbfMass_JetTotalDown", &vbfMass_JetTotalDown, &b_vbfMass_JetTotalDown);
+   _tree->SetBranchAddress("vbfMass_JetTotalUp", &vbfMass_JetTotalUp, &b_vbfMass_JetTotalUp);
    _tree->SetBranchAddress("vbfNJets20", &vbfNJets20, &b_vbfNJets20);
    _tree->SetBranchAddress("vbfNJets20_JetEnDown", &vbfNJets20_JetEnDown, &b_vbfNJets20_JetEnDown);
    _tree->SetBranchAddress("vbfNJets20_JetEnUp", &vbfNJets20_JetEnUp, &b_vbfNJets20_JetEnUp);
